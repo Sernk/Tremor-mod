@@ -1,0 +1,17 @@
+NPCs 
+ArchDemon
+Barmadillo
+BoneFlyer
+Quetzalcoatl
+HarpyWarrior
+Squoma
+Zootaloo
+ZootalooMatriarch
+Items
+Brainiac
+Sharkhalis
+Cursed Cleaver
+Ichor Cleaver
+Darkhalis
+
+

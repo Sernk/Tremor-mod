@@ -1,0 +1,5 @@
+Tremor mod port to 1.4
+Original Forums https://forums.terraria.org/index.php?threads/tremor-remastered-discontinued.28695/
+Original wiki https://tremormod.fandom.com/wiki/Tremor_Mod_Wiki
+My source code https://github.com/Sernk/Public-version-of-Tremor
+The mod is not completely finished yet. I hope someone will finish it, as I will probably not work on it anymore. Overall, the port is finished, but not in perfect condition.
