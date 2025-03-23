@@ -12,7 +12,7 @@ namespace TremorMod.Content.Items.BossLoot.TheDarkEmperor
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 22;
 			Item.height = 22;
-			Item.maxStack = 999;
+			Item.maxStack = 9999;
 			Item.consumable = true;
 			Item.knockBack = 1.5f;
 			Item.value = 1000;

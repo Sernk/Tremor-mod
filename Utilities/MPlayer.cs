@@ -57,9 +57,13 @@ namespace TremorMod.Utilities
         public float alchemicalKbAddition;
         public float alchemicalKbMult;
         public int alchemicalCrit;
+        public bool HeatRayF = false;
+        public bool VortexLightningF = false;
 
         public override void ResetEffects()
         {
+            HeatRayF = false;
+            VortexLightningF = false;
             damageReduction = 0f;
             paraxydeSetBonusActive = false;
             novaLeggings = false;

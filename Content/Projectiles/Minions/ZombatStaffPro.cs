@@ -43,7 +43,17 @@ namespace TremorMod.Content.Projectiles.Minions
 			}
 		}
 
-		public override bool OnTileCollide(Vector2 oldVelocity)
+        public override void AI()
+        {
+            Player player = Main.player[Projectile.owner];
+            if (!player.active || player.dead || !player.HasBuff(ModContent.BuffType<ZombatBuff>()))
+            {
+                Projectile.Kill();
+                return;
+            }
+        }
+
+        public override bool OnTileCollide(Vector2 oldVelocity)
 		{
 				if (Projectile.velocity.X != oldVelocity.X)
 				{

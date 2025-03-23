@@ -377,7 +377,7 @@ namespace TremorMod
 
             Generator.GenerateStructure(structurePath, new Point16(startX, startY), TremorMod.Instance);
 
-            Point16 dims = new Point16();
+            //Point16 dims = new Point16();
             //Generator.GetDimensions(structurePath, TremorMod.Instance, ref dims);
 
             //PlaceDungeonChests(startX, startY, iceChest);

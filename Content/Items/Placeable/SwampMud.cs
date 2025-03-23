@@ -12,7 +12,7 @@ namespace TremorMod.Content.Items.Placeable
 
 			Item.width = 30;
 			Item.height = 24;
-			Item.maxStack = 999;
+			Item.maxStack = 9999;
 			Item.rare = 0;
 			//item.createTile = ModContent.TileType<SwampMudTile>(); // Не существует 
 			Item.useTurn = true;

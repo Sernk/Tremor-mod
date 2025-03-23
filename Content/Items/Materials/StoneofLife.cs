@@ -10,7 +10,7 @@ namespace TremorMod.Content.Items.Materials
 
 			Item.width = 24;
 			Item.height = 16;
-			Item.maxStack = 99;
+			Item.maxStack = 9999;
 			Item.value = 500;
 			Item.rare = 1;
 		}

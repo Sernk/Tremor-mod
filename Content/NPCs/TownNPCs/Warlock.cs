@@ -105,25 +105,24 @@ namespace TremorMod.Content.NPCs.TownNPCs
             return false;
         }
 
-        private readonly WeightedRandom<string> _names = new[]
-		{
-			"Azazel:2",
-			"Baphomet",
-			"Vaal:3",
-			"Dis",
-			"Nisroke",
-			"Sabnak"
-		}.ToWeightedCollectionWithWeight();
+        public override List<string> SetNPCNameList() => new List<string>()
+        {
+            this.GetLocalizedValue("Name.Azazel"),
+            this.GetLocalizedValue("Name.Baphomet"),
+            this.GetLocalizedValue("Name.Vaal"),
+            this.GetLocalizedValue("Name.Dis"),
+            this.GetLocalizedValue("Name.Nisroke"),
+            this.GetLocalizedValue("Name.Sabnak")
+        };
 
-        public override List<string> SetNPCNameList() => new List<string> { _names.Get() };
+        public override string GetChat()
+        {
+            WeightedRandom<string> dialogue = new WeightedRandom<string>();
 
-        private readonly WeightedRandom<string> _chats = new[]
-		{
-			"..."
-		}.ToWeightedCollection();
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal1"));
 
-		public override string GetChat()
-			=> _chats.Get();
+            return dialogue;
+        }
 
 		public override void SetChatButtons(ref string button, ref string button2)
 		{
@@ -158,9 +157,6 @@ namespace TremorMod.Content.NPCs.TownNPCs
             shop.Add(ModContent.ItemType<VileHelmet>(), corruptionWorldCondition)
                 .Add(ModContent.ItemType<VileChestplate>(), corruptionWorldCondition)
                 .Add(ModContent.ItemType<VileLeggings>(), corruptionWorldCondition);
-
-            shop.Add(ModContent.ItemType<Necronomicon>(), hardmodeCondition)
-                .Add(ModContent.ItemType<Zephyrhorn>(), hardmodeCondition);
 
             shop.Add(ModContent.ItemType<Necronomicon>(), downedAllMechBossesCondition)
                 .Add(ModContent.ItemType<Zephyrhorn>(), downedAllMechBossesCondition);

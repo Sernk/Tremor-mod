@@ -39,7 +39,9 @@ namespace TremorMod.Content.Items.Accessories
 
 		public override void UpdateAccessory(Player player, bool hideVisual)
 		{
-			if (--TimeToShoot <= 0)
+            MPlayer modPlayer = player.GetModPlayer<MPlayer>();
+            modPlayer.HeatRayF = true;
+            if (--TimeToShoot <= 0)
 			{
 				TimeToShoot = ShootRate;
 				int Target = GetTarget();

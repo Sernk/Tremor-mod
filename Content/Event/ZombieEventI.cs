@@ -79,9 +79,9 @@ namespace TremorMod.Content.Event
 
 		public override void PostUpdate()
 		{
-			bool First = true;
+			//bool First = true;
 			const int XOffset = 1200;
-			const int YOffset = 1200;
+			//const int YOffset = 1200;
 
 			/*CyberWrathInvasion modPlayer = Player.GetModPlayer<CyberWrathInvasion>();
 			if (!ZWorld.ZInvasion)

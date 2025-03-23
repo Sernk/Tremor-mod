@@ -89,8 +89,8 @@ namespace TremorMod.Utilities
                 for (int k = 0; k < (int)((double)(Main.maxTilesX * Main.maxTilesY) * 6E-05); k++)
                 {
                     int i2 = WorldGen.genRand.Next(0, Main.maxTilesX);
-                    int j2 = WorldGen.genRand.Next((int)(Main.maxTilesY * .3f), (int)(Main.maxTilesY * .45f));
-                    WorldGen.OreRunner(i2, j2, WorldGen.genRand.Next(3, 4), WorldGen.genRand.Next(3, 8), (ushort)ModContent.TileType<NightmareOreTile>());
+                    int j2 = WorldGen.genRand.Next((int)(Main.maxTilesY * .2f), (int)(Main.maxTilesY * .5f));
+                    WorldGen.OreRunner(i2, j2, WorldGen.genRand.Next(3, 5), WorldGen.genRand.Next(4, 8), (ushort)ModContent.TileType<NightmareOreTile>());
                 }
 
                 for (int x = interval; x < Main.maxTilesX - interval; x += interval)
@@ -111,11 +111,14 @@ namespace TremorMod.Utilities
                 int worldWidth = Main.maxTilesX;
                 int worldHeight = Main.maxTilesY;
 
-                int centerX = WorldGen.genRand.Next(worldWidth / 4, 3 * worldWidth / 4);
-                int centerY = WorldGen.genRand.Next(0, worldHeight / 2);
+                int surfaceHeight = (int)Main.worldSurface;
 
-                int radius = 20; 
-                int borderThickness = 3; 
+                int centerX = WorldGen.genRand.Next(worldWidth / 4, 3 * worldWidth / 4);
+                int centerY = WorldGen.genRand.Next(surfaceHeight - 550, surfaceHeight - 200); // Небо
+
+
+                int radius = 20;
+                int borderThickness = 3;
 
                 for (int x = -radius - borderThickness; x <= radius + borderThickness; x++)
                 {
@@ -129,14 +132,14 @@ namespace TremorMod.Utilities
                             if (distanceSquared <= (radius + borderThickness) * (radius + borderThickness) &&
                                 distanceSquared > radius * radius)
                             {
-                                if (!Main.tile[tileX, tileY].HasTile)
+                                if (Main.tile[tileX, tileY].TileType != TileID.Hellstone && Main.tile[tileX, tileY].TileType != TileID.LihzahrdBrick)
                                 {
                                     WorldGen.PlaceTile(tileX, tileY, ModContent.TileType<HardCometiteOreTile>(), true, true);
                                 }
                             }
                             else if (distanceSquared <= radius * radius)
                             {
-                                if (!Main.tile[tileX, tileY].HasTile)
+                                if (Main.tile[tileX, tileY].TileType != TileID.Hellstone && Main.tile[tileX, tileY].TileType != TileID.LihzahrdBrick)
                                 {
                                     WorldGen.PlaceTile(tileX, tileY, ModContent.TileType<CometiteOreTile>(), true, true);
                                 }
@@ -145,7 +148,7 @@ namespace TremorMod.Utilities
                     }
                 }
                 Main.NewText("Something sparkles in the sky!", 50, 255, 130);
-            }      
+            }
         }
     }
 }

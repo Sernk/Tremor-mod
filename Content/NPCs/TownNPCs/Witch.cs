@@ -107,28 +107,27 @@ namespace TremorMod.Content.NPCs.TownNPCs
             return true;
         }
 
-        private readonly WeightedRandom<string> _names = new[]
-		{
-			"Circe",
-			"Kikimora:2",
-			"Morgana",
-			"Hecate"
-		}.ToWeightedCollectionWithWeight();
+        public override List<string> SetNPCNameList() => new List<string>()
+        {
+            this.GetLocalizedValue("Name.Circe"),
+            this.GetLocalizedValue("Name.Kikimora"),
+            this.GetLocalizedValue("Name.Morgana"),
+            this.GetLocalizedValue("Name.Hecate")
+        };
 
-		public override List<string> SetNPCNameList() => new List<string> { _names.Get() };
+        public override string GetChat()
+        {
+            WeightedRandom<string> dialogue = new WeightedRandom<string>();
 
-		private readonly WeightedRandom<string> _chats = new[]
-		{
-			"<cackle> Welcome dearies! I hope you don't mind the body parts. I was just cleaning up.",
-			"Eye of a newt! Tongue of a cat! Blood of a dryad... a little more blood.",
-			"Don't pull my nose! It's not a mask!",
-			"The moon has a secret dearies! One that you'll know soon enough!",
-			"This is halloween! Or is it?",
-			"Blood for the blood moon! Skulls for the skull cap... Or was it something else?"
-		}.ToWeightedCollection();
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal1"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal2"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal3"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal4"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal5"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal6"));
 
-		public override string GetChat()
-			=> _chats.Get();
+            return dialogue;
+        }
 
 		public override void SetChatButtons(ref string button, ref string button2)
 		{

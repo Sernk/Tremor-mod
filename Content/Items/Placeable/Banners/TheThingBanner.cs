@@ -11,6 +11,7 @@ namespace TremorMod.Content.Items.Placeable.Banners
         public override void SetDefaults()
         {
             Item.DefaultToPlaceableTile(ModContent.TileType<EnemyBanner>(), (int)EnemyBanner.StyleID.TheThing);
+            Item.maxStack = 9999;
             Item.width = 10;
             Item.height = 24;
             Item.SetShopValues(ItemRarityColor.Blue1, Item.buyPrice(silver: 10));

@@ -11,7 +11,7 @@ namespace TremorMod.Content.Items.Placeable.Stone
 
 			Item.width = 64;
 			Item.height = 32;
-			Item.maxStack = 99;
+			Item.maxStack = 9999;
 			Item.useTurn = true;
 			Item.autoReuse = true;
 			Item.useAnimation = 15;

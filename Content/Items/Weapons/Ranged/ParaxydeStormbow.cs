@@ -54,7 +54,7 @@ namespace TremorMod.Content.Items.Weapons.Ranged
         {
             if (Main.rand.NextBool(3)) 
             {
-                Projectile.NewProjectile(source, position, velocity, ProjectileID.CrystalPulse2, damage, knockback, player.whoAmI);
+                Projectile.NewProjectile(source, position, velocity, ProjectileID.CrystalPulse, damage, knockback, player.whoAmI);
             }
             else
             {

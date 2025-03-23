@@ -11,7 +11,7 @@ namespace TremorMod.Content.Items.Placeable
 		{
 			Item.width = 42;
 			Item.height = 32;
-			Item.maxStack = 99;
+			Item.maxStack = 9999;
 			Item.value = 100;
 			Item.rare = 1;
 			Item.createTile = ModContent.TileType<RichMahoganyArmchairTile>();

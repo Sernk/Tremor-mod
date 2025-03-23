@@ -57,9 +57,9 @@ namespace TremorMod.Content.Items.Weapons.Ranged
 
 		public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
 		{
-			type = 1;
+            Projectile.NewProjectile(source, position, velocity, ProjectileID.WoodenArrowFriendly, damage, knockback, player.whoAmI);
 
-			if (Main.rand.NextBool(5))
+            if (Main.rand.NextBool(5))
 			{
 				int proj = Projectile.NewProjectile(Item.GetSource_FromThis(), position.X, position.Y, velocity.X, velocity.Y, 686, damage, Main.myPlayer);
 				Main.projectile[proj].hostile = false;

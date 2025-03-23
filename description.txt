@@ -1,5 +1,27 @@
 Tremor mod port to 1.4
+Credits
+Re-Logic - for creating Terraria
+Bluemagic123 - big thanks for creating tModLoader and helping with code
+Jopojelly - for a lot help with the code
+Milt69466 - for allowing us to use Hardmode Warhammers suggestion and sprites
+Zoomo - for allowing us to use his summoner improving, Motherboard and Wall of Shadow suggestion and sprites, and also other sprites from his thread
+DerpoTheMagnificent - for allowing us to use Magmonium suggestion and sprites
+Snickerbobble - for allowing us to use his Bottled Souls suggestion and sprites
+Pinelord - for allowing us to use his Space Whale suggestion and making new Whale sprite
+Sergo - for allowing us to use ideas from his suggestions thread
+Delicious Saturn - for his great job making music for our mod
+PhoenixBlade - for making new sprites with tilesheets for some ores
+Ser_FruKtoz - for allowing us to use Brutallisk suggestion
+Eli10293 - for making new shields sprites
+Xenos X-219TY - for making Ocean Mimic animation
+Bootr Baws, Madhatterox and Mcalaja - for making amazing pictures of gameplay with our mod (They also won in our 1st Community Event)
+Mr.Pigeon - for making some sprites and animation sheets
+Jofairden - For previous work on refactoring the mod
+Iggysaur - For various resprites
+Vaklyrie - For various resprites
 Original Forums https://forums.terraria.org/index.php?threads/tremor-remastered-discontinued.28695/
 Original wiki https://tremormod.fandom.com/wiki/Tremor_Mod_Wiki
-My source code https://github.com/Sernk/Public-version-of-Tremor
+My source code https://github.com/Sernk/Tremor-mod
 The mod is not completely finished yet. I hope someone will finish it, as I will probably not work on it anymore. Overall, the port is finished, but not in perfect condition.
+Need help fixing broken sprites and rendering animations
+

@@ -14,6 +14,7 @@ namespace TremorMod.Content.Items.Placeable.Banners
             Item.width = 10;
 			Item.height = 24;
             Item.SetShopValues(ItemRarityColor.Blue1, Item.buyPrice(silver: 10));
+            Item.maxStack = 9999;
         }
 
         public override void SetStaticDefaults()

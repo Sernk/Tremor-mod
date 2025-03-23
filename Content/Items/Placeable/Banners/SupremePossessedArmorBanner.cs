@@ -10,6 +10,7 @@ namespace TremorMod.Content.Items.Placeable.Banners
     {
         public override void SetDefaults()
         {
+            Item.maxStack = 9999;
             Item.DefaultToPlaceableTile(ModContent.TileType<EnemyBanner>(), (int)EnemyBanner.StyleID.SupremePossessedArmor);
             Item.width = 10;
             Item.height = 24;

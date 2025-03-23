@@ -12,7 +12,7 @@ namespace TremorMod.Content.Items.Placeable
 		{
 			Item.width = 48;
 			Item.height = 64;
-			Item.maxStack = 999;
+			Item.maxStack = 9999;
 			Item.value = 100;
 			Item.rare = 1;
 			Item.createTile = ModContent.TileType<CreepyThroneTile>();

@@ -5,6 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using TremorMod;
+using TremorMod.Content.Buffs;
 
 namespace TremorMod.Content.Projectiles.Minions
 {
@@ -41,15 +42,25 @@ namespace TremorMod.Content.Projectiles.Minions
 			}
 			return false;
 		}
-		
-    public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
-    {
-			TremorPlayer modPlayer = Main.player[Projectile.owner].GetModPlayer<TremorPlayer>();
-            if(modPlayer.shadowArmSF && Main.rand.NextBool(3))
-			{
-                  target.AddBuff(153, 180, false);
-			}
-    }		
+
+        public override void AI()
+        {
+            Player player = Main.player[Projectile.owner];
+            if (!player.active || player.dead || !player.HasBuff(ModContent.BuffType<ShadowArmBuff>()))
+            {
+                Projectile.Kill();
+                return;
+            }
+        }
+
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
+        {
+			    TremorPlayer modPlayer = Main.player[Projectile.owner].GetModPlayer<TremorPlayer>();
+                if(modPlayer.shadowArmSF && Main.rand.NextBool(3))
+			    {
+                      target.AddBuff(153, 180, false);
+			    }
+        }		
 
         public override bool PreDraw(ref Color lightColor)
         {

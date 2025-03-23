@@ -10,7 +10,7 @@ namespace TremorMod.Content.Items.Materials
 		{
 			Item.width = 20;
 			Item.height = 40;
-			Item.maxStack = 99;
+			Item.maxStack = 9999;
 			Item.useTurn = true;
 			Item.autoReuse = true;
 			Item.useAnimation = 15;

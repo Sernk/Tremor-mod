@@ -36,20 +36,20 @@ namespace TremorMod.Content.Biomes.Ice.Tree
             //ModTree = new TremorTree(); // Assuming TremorTree is a valid ModTree
         }
 
-        public override bool PreDraw(int i, int j, SpriteBatch spriteBatch)
-        {
-            Vector2 zero = new Vector2(Main.offScreenRange, Main.offScreenRange);
-            Tile tile = Main.tile[i, j];
-            int height = tile.TileFrameY == 36 ? 18 : 16;
-            int animate = 0;
-            if (tile.TileFrameY >= 56)
-            {
-                animate = Main.tileFrame[Type] * AnimationFrameHeight;
-            }
-            Texture2D texture = TextureAssets.Tile[Type].Value;
-            Main.spriteBatch.Draw(texture, new Vector2(i * 16 - (int)Main.screenPosition.X, j * 16 - (int)Main.screenPosition.Y) + zero, new Rectangle(tile.TileFrameX, tile.TileFrameY + animate, 16, height), Lighting.GetColor(i, j), 0f, default(Vector2), 1f, SpriteEffects.None, 0f);
-            return false;
-        }
+        //public override bool PreDraw(int i, int j, SpriteBatch spriteBatch)
+        //{
+        //    Vector2 zero = new Vector2(Main.offScreenRange, Main.offScreenRange);
+        //    Tile tile = Main.tile[i, j];
+        //    int height = tile.TileFrameY == 36 ? 18 : 16;
+        //    int animate = 0;
+        //    if (tile.TileFrameY >= 56)
+        //    {
+        //        animate = Main.tileFrame[Type] * AnimationFrameHeight;
+        //    }
+        //    Texture2D texture = TextureAssets.Tile[Type].Value;
+        //    Main.spriteBatch.Draw(texture, new Vector2(i * 16 - (int)Main.screenPosition.X, j * 16 - (int)Main.screenPosition.Y) + zero, new Rectangle(tile.TileFrameX, tile.TileFrameY + animate, 16, height), Lighting.GetColor(i, j), 0f, default(Vector2), 1f, SpriteEffects.None, 0f);
+        //    return false;
+        //}
 
         public override void RandomUpdate(int i, int j)
         {

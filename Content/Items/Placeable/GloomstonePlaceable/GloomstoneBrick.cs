@@ -12,7 +12,7 @@ namespace TremorMod.Content.Items.Placeable.GloomstonePlaceable
 		{
 			Item.width = 12;
 			Item.height = 12;
-			Item.maxStack = 999;
+			Item.maxStack = 9999;
 			Item.useTurn = true;
 			Item.value = 100;
 			Item.autoReuse = true;

@@ -14,7 +14,6 @@ using TremorMod.Content.Items.Accessories;
 using TremorMod.Content.Items.Bag;
 using TremorMod.Content.Items;
 using TremorMod.Content.Items.Fungus;
-using TremorMod.Utilities;
 
 namespace TremorMod.Content.NPCs.Bosses.FungusBeetle
 {

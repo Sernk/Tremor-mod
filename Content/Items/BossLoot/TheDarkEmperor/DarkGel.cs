@@ -9,7 +9,7 @@ namespace TremorMod.Content.Items.BossLoot.TheDarkEmperor
 		{
 			Item.width = 28;
 			Item.height = 30;
-			Item.maxStack = 99;
+			Item.maxStack = 9999;
 			Item.value = 1000;
 			Item.rare = 11;
 		}

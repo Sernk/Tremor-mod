@@ -12,7 +12,7 @@ namespace TremorMod.Content.Items.Placeable
 		{
 			Item.width = 22;
 			Item.height = 32;
-			Item.maxStack = 999;
+			Item.maxStack = 9999;
 			Item.useTurn = true;
 			Item.autoReuse = true;
 			Item.useAnimation = 15;

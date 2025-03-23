@@ -36,7 +36,6 @@ using TremorMod.Content.NPCs.Bosses.AndasBoss;
 using TremorMod.Content.Items.AndasItems;
 using TremorMod.Content.NPCs.Bosses.Motherboard;
 using TremorMod.Content.NPCs.Bosses.FungusBeetle;
-using TremorMod.Content.NPCs.Bosses;
 using TremorMod.Content.Items.Fungus;
 using TremorMod.Content.Items.HeaterOfWorldsItems;
 using TremorMod.Content.NPCs.Bosses.TikiTotem;

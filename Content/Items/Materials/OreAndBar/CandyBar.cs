@@ -11,7 +11,7 @@ namespace TremorMod.Content.Items.Materials.OreAndBar
 		{
 			Item.width = 30;
 			Item.height = 24;
-			Item.maxStack = 99;
+			Item.maxStack = 9999;
 			Item.value = 6000;
 			Item.rare = 10;
 			Item.useTurn = true;

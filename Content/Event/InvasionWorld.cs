@@ -13,7 +13,7 @@ namespace TremorMod.Content.Event
 		public static int CyberWrathPoints1;
 		public static bool CyberWrath;
 
-		public override void OnWorldLoad()/* tModPorter Suggestion: Also override OnWorldUnload, and mirror your worldgen-sensitive data initialization in PreWorldGen */
+		public override void OnWorldLoad()
 		{
 			CyberWrathPoints1 = 0;
 			CyberWrath = false;
@@ -26,7 +26,7 @@ namespace TremorMod.Content.Event
 			writer.Write(CyberWrathPoints1);
 		} */
 
-		public override void SaveWorldData(TagCompound tag)/* tModPorter Suggestion: Edit tag parameter instead of returning new TagCompound */
+		public override void SaveWorldData(TagCompound tag)
         {
             tag["CyberWrath"] = CyberWrath;
             tag["CyberWrathPoints1"] = CyberWrathPoints1;

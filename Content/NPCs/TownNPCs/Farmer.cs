@@ -99,31 +99,30 @@ namespace TremorMod.Content.NPCs.TownNPCs
             return false; 
         }
 
-        private readonly WeightedRandom<string> _names = new[]
-		{
-			"Trillian:2",
-			"Penelope:2",
-			"Emily",
-			"Abigail",
-			"Alma",
-			"Alexandra",
-			"Peg"
-		}.ToWeightedCollectionWithWeight();
+        public override List<string> SetNPCNameList() => new List<string>()
+        {
+            this.GetLocalizedValue("Name.Trillian"),
+            this.GetLocalizedValue("Name.Penelope"),
+            this.GetLocalizedValue("Name.Emily"),
+            this.GetLocalizedValue("Name.Abigail"),
+            this.GetLocalizedValue("Name.Alma"),
+            this.GetLocalizedValue("Name.Alexandra"),
+            this.GetLocalizedValue("Name.Peg")
+        };
 
-        public override List<string> SetNPCNameList() => new List<string> { _names.Get() };
+        public override string GetChat()
+        {
+            WeightedRandom<string> dialogue = new WeightedRandom<string>();
 
-        private readonly WeightedRandom<string> _chats = new[]
-		{
-			"I wonder who had the idea of growing such an evil corn? Don't look at me like this, I have nothing to do with.",
-			"There are so many wonderful and amazing plants in this world but there is nothing more amazing like a corn!",
-			"Uh... Oh... Did you came to buy a corn? I'm afraid that it can become evil too.",
-			"Don't use chemicals on your plants! Chemicals make them being evil and crazy!",
-			"Don't you dare to offer me to eat popcorn! After those bad events I just can't eat anything that contains corn!",
-			"Take some water... Add ebonkoi... Wallow some deathweed dust... Mix everything... Oh! Hello! Want to buy something?"
-		}.ToWeightedCollection();
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal1"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal2"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal3"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal4"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal5"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal6"));
 
-		public override string GetChat()
-			=> _chats.Get();
+            return dialogue;
+        }
 
 		public override void SetChatButtons(ref string button, ref string button2)
 		{

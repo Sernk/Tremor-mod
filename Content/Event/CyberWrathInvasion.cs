@@ -6,8 +6,6 @@ using Terraria.ModLoader;
 using TremorMod.Content.NPCs.Invasion.ParadoxTitan;
 using TremorMod.Content.NPCs.Invasion;
 
-//using Terraria.Content.Fonts;
-
 namespace TremorMod.Content.Event
 {
 	public class CyberWrathInvasion : ModPlayer
@@ -17,59 +15,19 @@ namespace TremorMod.Content.Event
 
 		}
 
-		/*public static readonly PlayerLayer MiscEffects = new PlayerLayer("Tremor", "MiscEffects", PlayerLayer.MiscEffectsFront, delegate (PlayerDrawInfo drawInfo)
+        public override void PostUpdateBuffs()
+        {
+            if (InvasionWorld.CyberWrath)
+            {
+                InvasionWorld.CyberWrathPoints = InvasionWorld.CyberWrathPoints1;
+
+                ModContent.GetInstance<CyberWrathUISystem>().UpdateProgress(InvasionWorld.CyberWrathPoints1);
+            }
+        }
+
+        public override void PostUpdate()
 		{
-			Player drawPlayer = drawInfo.drawPlayer;
-			Mod mod = Tremor.instance;
-			CyberWrathInvasion modPlayer = drawPlayer.GetModPlayer<CyberWrathInvasion>(mod);
-
-			Texture2D CyberWrathI = mod.GetTexture("Invasion/System/System1");
-			Texture2D CyberWrathI1 = mod.GetTexture("Invasion/System/System2");
-			Texture2D CyberWrathI2 = mod.GetTexture("Invasion/System/System3");
-			Texture2D CyberWrathI3 = mod.GetTexture("Invasion/System/System4");
-			Texture2D CyberWrathI4 = mod.GetTexture("Invasion/System/System5");
-			Texture2D CyberWrathI5 = mod.GetTexture("Invasion/System/System6");
-			Texture2D CyberWrathI6 = mod.GetTexture("Invasion/System/System7");
-			Texture2D CyberWrathI7 = mod.GetTexture("Invasion/System/System8");
-			Texture2D CyberWrathI8 = mod.GetTexture("Invasion/System/System9");
-			Texture2D CyberWrathI9 = mod.GetTexture("Invasion/System/System10");
-			Texture2D texture1 = mod.GetTexture("Invasion/System/System");
-			SpriteBatch sb1 = Main.spriteBatch;
-
-			int iH1 = texture1.Height;
-			int iW1 = texture1.Width;
-
-			int sX1 = 37;
-			int sY1 = 30;
-
-			int eH = CyberWrathI.Height;
-			int eW = CyberWrathI.Width;
-
-			int XX1 = ((24 - iW1) / 2) + Main.screenWidth - sX1;
-			int YY1 = ((24 - iH1) / 2) + sY1 + (int)(280 * 1.4) + (24 - iW1) * (-1) + 20;
-
-			int eX = XX1 - 333;
-			int eY = YY1 - 430 + (24 - eW) * (-1);
-
-			bool _number = true;
-			int number = 1;
-		});
-
-		public override void ModifyDrawLayers(List<PlayerLayer> layers)
-		{
-			MiscEffects.visible = true;
-			layers.Add(MiscEffects);
-			layers.Insert(0, MiscEffects);
-		}*/
-
-		public override void PostUpdateBuffs()
-		{
-
-		}
-
-		public override void PostUpdate()
-		{
-			bool First = true;
+			//bool First = true;
 			const int XOffset = 400;
 			const int YOffset = 400;
 
@@ -88,9 +46,9 @@ namespace TremorMod.Content.Event
                     NPC.NewNPC(NPC.GetSource_NaturalSpawn(), (int)Player.Center.X - XOffset, (int)Player.Center.Y, Mod.Find<ModNPC>("InvisibleSoul").Type);
 
                 if (Main.rand.Next(150) == 1)
-                    NPC.NewNPC(NPC.GetSource_NaturalSpawn(), (int)Player.Center.X + XOffset, (int)Player.Center.Y + YOffset, Mod.Find<ModNPC>("CyberBat").Type);
+                    NPC.NewNPC(NPC.GetSource_NaturalSpawn(), (int)Player.Center.X + XOffset, (int)Player.Center.Y + YOffset, Mod.Find<ModNPC>("ParadoxBat").Type);
                 if (Main.rand.Next(150) == 1)
-                    NPC.NewNPC(NPC.GetSource_NaturalSpawn(), (int)Player.Center.X - XOffset, (int)Player.Center.Y - YOffset, Mod.Find<ModNPC>("CyberBat").Type);
+                    NPC.NewNPC(NPC.GetSource_NaturalSpawn(), (int)Player.Center.X - XOffset, (int)Player.Center.Y - YOffset, Mod.Find<ModNPC>("ParadoxBat").Type);
 
                 if (Main.rand.Next(500) == 1)
                     NPC.NewNPC(NPC.GetSource_NaturalSpawn(), (int)Player.Center.X + XOffset, (int)Player.Center.Y + YOffset, Mod.Find<ModNPC>("ParadoxSun").Type);
@@ -168,10 +126,10 @@ namespace TremorMod.Content.Event
                 InvasionWorld.CyberWrathPoints1 = 98;
             }
 
-            if (NPC.AnyNPCs(Mod.Find<ModNPC>("Zerokk").Type) && InvasionWorld.CyberWrathPoints1 == 98)
-            {
-                InvasionWorld.CyberWrathPoints1 = 98;
-            }
+            //if (NPC.AnyNPCs(Mod.Find<ModNPC>("Zerokk").Type) && InvasionWorld.CyberWrathPoints1 == 98)
+            //{
+            //    InvasionWorld.CyberWrathPoints1 = 98;
+            //}
 
             if (NPC.AnyNPCs(Mod.Find<ModNPC>("Titan_").Type) && InvasionWorld.CyberWrathPoints1 > 98)
             {

@@ -24,8 +24,8 @@ namespace TremorMod.Content.Items.Weapons.Ranged
 			Item.autoReuse = true;
 			Item.shoot = 10;
 			Item.shootSpeed = 12f;
-			Item.useAmmo = 14;
-		}
+            Item.useAmmo = AmmoID.Bullet;
+        }
 
 		public override void SetStaticDefaults()
 		{

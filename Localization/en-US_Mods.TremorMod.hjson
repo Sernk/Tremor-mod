@@ -2,6 +2,22 @@ NPCs: {
 	Witch: {
 		Census.SpawnCondition: Conditions unknown
 
+		Name: {
+			Circe: Circe
+			Kikimora: Kikimora
+			Morgana: Morgana
+			Hecate: Hecate
+		}
+
+		Chat: {
+			Normal1: Welcome dearies! I hope you don't mind the body parts. I was just cleaning up.
+			Normal2: Eye of a newt! Tongue of a cat! Blood of a dryad... a little more blood.
+			Normal3: Don't pull my nose! It's not a mask!
+			Normal4: The moon has a secret dearies! One that you'll know soon enough!
+			Normal5: This is halloween! Or is it?
+			Normal6: Blood for the blood moon! Skulls for the skull cap... Or was it something else?
+		}
+
 		TownNPCMood: {
 			Princess_LovesNPC: Мне нравится {NPCName}.
 			LikeNPC_Princess: Мне нравится {NPCName}.
@@ -18,6 +34,17 @@ NPCs: {
 
 	Warlock: {
 		Census.SpawnCondition: Conditions unknown
+
+		Name: {
+			Azazel: Azazel
+			Baphomet: Baphomet
+			Vaal: Vaal
+			Dis: Dis
+			Nisroke: Nisroke
+			Sabnak: Sabnak
+		}
+
+		Chat.Normal1: ...
 
 		TownNPCMood: {
 			Princess_LovesNPC: Мне нравится {NPCName}.
@@ -36,6 +63,26 @@ NPCs: {
 	Undertaker: {
 		Census.SpawnCondition: Conditions unknown
 
+		Name: {
+			Tenner: Tenner
+			Geyer: Geyer
+			Cleve: Cleve
+			Ferron: Ferron
+			Gasper: Gasper
+			Spots: Spots
+			Hargon: Hargon
+		}
+
+		Chat: {
+			Normal1: Don't worry. Nobody will get out of the coffin that I have made.
+			Normal2: Are you afraid of ghosts? I'm not. But the ghosts are afraid of me.
+			Normal3: If you need some help then feel free to ask me. I have a lot of undead things on my side.
+			Normal4: What will you prefer to do if this day will be your last day?
+			Normal5: Our life is a challenge. To make it easier - buy my stuff.
+			Normal6: Don't worry. I'm not a vampire even my eyes are red and my skin is of a strange color.
+			Normal7: Do you prefer blood or tomato juice?
+		}
+
 		TownNPCMood: {
 			Princess_LovesNPC: Мне нравится {NPCName}.
 			LikeNPC_Princess: Мне нравится {NPCName}.
@@ -52,6 +99,26 @@ NPCs: {
 
 	Startrooper: {
 		Census.SpawnCondition: Conditions unknown
+
+		Name: {
+			Ripley: Ripley
+			Dallas: Dallas
+			Brett: Brett
+			Kane: Kane
+			Ash: Ash
+			Parker: Parker
+			Lambert: Lambert
+		}
+
+		Chat: {
+			Normal1: There is an explanation for anything, you know.
+			Normal2: If you get into a trouble remember that somebody will surely save your skin.
+			Normal3: My friend always liked to tell me the odds but now he is dead. You should know: Never tell me the odds.
+			Normal4: That giant flying fish that you've defeated was making plans to destroy my home-planet. Glad you've killed him.
+			Normal5: I suggest you carrying at least small blaster - nobody knows what's on mind of this creatures in this world.
+			Normal6: Have you ever heard a tale of a giant three eyed creature with eyes in it hands and tentacles on head? I'm very glad that it is just a stupid story.
+			Normal7: There were some cult of men calling themselve knights and fighting with some kind of light swords on a planet I was travelling once to. As for me, a gun is better than a useless sword.
+		}
 
 		TownNPCMood: {
 			Princess_LovesNPC: Мне нравится {NPCName}.
@@ -70,6 +137,24 @@ NPCs: {
 	Sorcerer: {
 		Census.SpawnCondition: Conditions unknown
 
+		Name: {
+			Merdok: Merdok
+			Avalon: Avalon
+			Aron: Aron
+			Harry: Harry
+			Edgar: Edgar
+			Marco: Marco
+		}
+
+		Chat: {
+			Normal1: You'll never find me trapped underground.
+			Normal2: Sorcery is all about control. It's different from magic in that it requires symbols and fetishes.
+			Normal3: I can share the magic with you for free. Well... Almost free.
+			Normal4: Sorry. I don't do parties.
+			Normal5: Don't touch that if you want to keep your hand. It's still quite unstable.
+			Normal6: I want to get the rabbit out of the hat! Do you want it? You don't want a rabbit? Seriously!?
+		}
+
 		TownNPCMood: {
 			Princess_LovesNPC: Мне нравится {NPCName}.
 			LikeNPC_Princess: Мне нравится {NPCName}.
@@ -86,6 +171,26 @@ NPCs: {
 
 	Professor: {
 		Census.SpawnCondition: Conditions unknown
+
+		Name: {
+			James: James
+			Harold: Harold
+			Steven: Steven
+			David: David
+			John: John
+			BrusBunner: Brus Bunner
+			Alfred: Alfred
+		}
+
+		Chat: {
+			Normal1: Don't mind my appearance. This is just the result of a failed experiment.
+			Normal2: Do you have a carrot? Oh, never mind.
+			Normal3: Imagine that in all those rabbits that you have killed were imprisoned soul of common people! Just think about it...
+			Normal4: Someday we'll all feel the cold embrace of death. Bring me some more carrot soup before this happens.
+			Normal5: Magic allows you to do what cannot be done scientifically. The main thing is not to overdo it, if you know what I mean.
+			Normal6: I don't like people that like how wizards 'magically' grab rabbits out of their magic hats. It's horrible!
+			Normal7: I studied the anomalies in this world a long time ago. During this time, I became the anomaly myself. Funny.
+		}
 
 		TownNPCMood: {
 			Princess_LovesNPC: Мне нравится {NPCName}.
@@ -104,6 +209,26 @@ NPCs: {
 	LadyMoon: {
 		Census.SpawnCondition: Conditions unknown
 
+		Name: {
+			Atria: Atria
+			Mintaka: Mintaka
+			Nashira: Nashira
+			Rana: Rana
+			Talita: Talita
+			Zosma: Zosma
+			Pleyona: Pleyona
+		}
+
+		Chat: {
+			Normal1: There are so many beautiful things in this world! What can be more beautiful than a big shining star? Maybe only an exploding big shining star!
+			Normal2: I hope this world doesn't have crazy kings that want to kill you. You're not one of them, are you!?
+			Normal3: I have heard about an space station called Death Star that can destroy any planet or star! Can you show me this station?
+			Normal4: I believe I can fly! I believe I can touch the sk-... Sorry, I forgot that I'm not alone here!
+			Normal5: What do you call a man who watches an exploding star? A STARk man!
+			Normal6: I was in a strange castle one day. There were mechanical things saying EXTERMINATE. Were they your minions?
+			Normal7: Planets are burning, stars are exploding, but the prices for my spacy things are not changing!
+		}
+
 		TownNPCMood: {
 			Princess_LovesNPC: Мне нравится {NPCName}.
 			LikeNPC_Princess: Мне нравится {NPCName}.
@@ -120,6 +245,25 @@ NPCs: {
 
 	Knight: {
 		Census.SpawnCondition: Conditions unknown
+
+		Name: {
+			Wheatly: Wheatly
+			Daniel: Daniel
+			Crox: Crox
+			Geralt: Geralt
+			Roland: Roland
+			Hodor: Hodor
+		}
+
+		Chat: {
+			Normal1: Well met, brave adventurer.
+			Normal2: A balanced weapon can mean the difference between victory and defeat.
+			Normal3: I am not overly fond of the bovine hordes. Best to leave them alone, really.
+			Normal4: Do you have a weapon? Needs about 20% more coolness!
+			Normal5: Hail and good morrow my Liege!
+			Normal6: I was in a strange castle one day. There were mechanical things saying EXTERMINATE. Were they your minions?
+			Normal7: Have you ever met a knight whose name is Sir Uncle Slime? He is a good friend of mine.
+		}
 
 		TownNPCMood: {
 			Princess_LovesNPC: Мне нравится {NPCName}.
@@ -149,11 +293,49 @@ NPCs: {
 			Content: Я довольный.
 		}
 
+		Name: {
+			Gefest: Gefest
+			Aule: Aule
+			Agarorn: Agarorn
+			Treak: Treak
+			Haymer: Haymer
+			Golan: Golan
+		}
+
+		Chat: {
+			Normal1: You can't lift my hammer? Not surprising! That's because you are not worthy!
+			Normal2: Strangely, but nobody uses hammers for making bars. How do you just put ore into furnaces and get bars!? That is insane!
+			Normal3: Valar Morghulis! Oh wait, that's not Braavos! Forget what I've said.
+			Normal4: What? You ask me who am I?! I am the son of the Vulcan, and the Vulcan is the mighty anvilborn!
+			Normal5: My bars are better because I make them with my hammer. If you won't buy my bars, I will make a bar from you.
+			Normal6: You wonder why people call me Forge Master!? That means you don't believe I'm the real Master of Forges!?
+			Normal7: Be careful when working with forges. I got burnt once when I was taking off a bar from it. That's why I'm wearing such armor!
+		}
+
 		DisplayName: Forge Master
 	}
 
 	Farmer: {
 		Census.SpawnCondition: Conditions unknown
+
+		Name: {
+			Trillian: Trillian
+			Penelope: Penelope
+			Emily: Emily
+			Abigail: Abigail
+			Alma: Alma
+			Alexandra: Alexandra
+			Peg: Peg
+		}
+
+		Chat: {
+			Normal1: I wonder who had the idea of growing such an evil corn? Don't look at me like this, I have nothing to do with.
+			Normal2: There are so many wonderful and amazing plants in this world but there is nothing more amazing like a corn!
+			Normal3: Uh... Oh... Did you came to buy a corn? I'm afraid that it can become evil too.
+			Normal4: Don't use chemicals on your plants! Chemicals make them being evil and crazy!
+			Normal5: Don't you dare to offer me to eat popcorn! After those bad events I just can't eat anything that contains corn!
+			Normal6: Take some water... Add ebonkoi... Wallow some deathweed dust... Mix everything... Oh! Hello! Want to buy something?
+		}
 
 		TownNPCMood: {
 			Princess_LovesNPC: Мне нравится {NPCName}.
@@ -172,6 +354,26 @@ NPCs: {
 	Elf: {
 		Census.SpawnCondition: Conditions unknown
 
+		Name: {
+			Nick: Nick
+			Elfie: Elfie
+			Jingle: Jingle
+			Sparkle: Sparkle
+			Twinkle: Twinkle
+			Elvis: Elvis
+			Peppermint: Peppermint
+			Snowflake: Snowflake
+		}
+
+		Chat: {
+			Normal1: What do you know about reindeers?
+			Normal2: I could give you some presents, but... You've been naughty this year.
+			Normal3: I am Santa's favorite elf!
+			Normal4: Jingle bells, jingle bells, jingle all the way!
+			Normal5: Someone threw a snowball at me. I don't know who did it but I will find him and throw a snowball at him too.
+			Normal6: I licked an icicle one fine day. It resulted in not a lot of pain.
+		}
+
 		TownNPCMood: {
 			Princess_LovesNPC: Мне нравится {NPCName}.
 			LikeNPC_Princess: Мне нравится {NPCName}.
@@ -188,6 +390,27 @@ NPCs: {
 
 	Chef: {
 		Census.SpawnCondition: Conditions unknown
+
+		Name: {
+			Richard: Richard
+			Oliver: Oliver
+			Alan: Alan
+			Gordon: Gordon
+			Umeril: Umeril
+			Anthony: Anthony
+			Jerome: Jerome
+			Liam: Liam
+		}
+
+		Chat: {
+			Normal1: This crab is so undercooked, it's still singing under the sea!
+			Normal2: This needs more salt! And a dash of powdered blinkroot.
+			Normal3: Any Oaf can make a bowl of soup, while I create culinary art.
+			Normal4: Somebody stole my knife. I think I will cut the thief with the knife when I find it.
+			Normal5: No! I will not add vile powder to this flambe.
+			Normal6: Hello there! How's it goin?
+			Normal7: Do you know recipes of unusual food? No? THEN GO AND FIND THEM FOR ME OR I WILL CU-... Oh. Sorry.
+		}
 
 		TownNPCMood: {
 			Princess_LovesNPC: Мне нравится {NPCName}.
@@ -217,6 +440,24 @@ NPCs: {
 			Content: Я довольный.
 		}
 
+		Name: {
+			Richard: Richard
+			Arthur: Arthur
+			Jack: Jack
+			William: William
+			Robin: Robin
+			Wales: Wales
+		}
+
+		Chat: {
+			Normal1: You'd have to be a very good archer in order to shoot an arrow into a knee.
+			Normal2: I'd like to get my hands on a goblintech bow. Those things can shoot multiple arrows.
+			Normal3: I deal in long distance death! Have a look at my wares.
+			Normal4: I will shoot you with my best arrow if you will not buy anything!
+			Normal5: Guns? Guns are for cowards!
+			Normal6: You don't need to make arrows. You need to buy them!
+		}
+
 		DisplayName: Archer
 	}
 
@@ -234,6 +475,26 @@ NPCs: {
 			Content: Я довольный.
 		}
 
+		Name: {
+			Badruddin: Badruddin
+			Galib: Galib
+			Salavat: Salavat
+			Zafar: Zafar
+			Valid: Valid
+			Tunak: Tunak
+			Nadim: Nadim
+		}
+
+		Chat: {
+			Normal1: Salam aleykum! Do you need anything?
+			Normal2: I got some sand in my pockets. I think throwing it will hurt your eyes.
+			Normal3: My wear was absolutely white long time ago. Maybe I should wash it with this perfect yellow water?
+			Normal4: There are stories about what happened in the sands of this desert. But I won't tell you anything.
+			Normal5: In case something will happen with me... I bequeath you all my sand.
+			Normal6: The sands are telling me that... That... Ugh... That you will buy everything!
+			Normal7: The sands are moving... Be careful or you will be sucked into unknown depths!
+		}
+
 		DisplayName: Arabian Merchant
 	}
 
@@ -249,6 +510,26 @@ NPCs: {
 			FarFromHome: Я слишком далеко от дома.
 			NoHome: Терпеть не могу, когда у меня нет дома.
 			Content: Я довольный.
+		}
+
+		Name: {
+			Rizo: Rizo
+			Albert: Albert
+			Bernando: Bernando
+			Seefeld: Seefeld
+			Raymond: Raymond
+			Paracelsus: Paracelsus
+			Nerxius: Nerxius
+		}
+
+		Chat: {
+			Normal1: Love is just a chain of chemical reactions. So that you know.
+			Normal2: If you wanna know, it was hard to press these gel cubes.
+			Normal3: Wanna try something new? I think you may be interested in... BOOM FLASKS!.
+			Normal4: The man who passes the sentence should throw the flask...!
+			Normal5: I'm gonna have to throw EVERY SINGLE FLASK in this house!.
+			Normal6: What? You don't like my hairstyle? Your isn't better.
+			Normal7: If you think that I'm a terrorist just because I sell exploding flasks? You're wrong. There are even worse people who sell worse things.
 		}
 
 		DisplayName: Alchemist
@@ -288,7 +569,7 @@ NPCs: {
 	Almagron.DisplayName: Almagron
 	Zarprute.DisplayName: Zarprute
 	Zarprite.DisplayName: Zarprite
-	YGiantSlime.DisplayName: Y Giant Slime
+	YGiantSlime.DisplayName: Yellow Giant Slime
 	Woody.DisplayName: Woody
 	WoodlingWarrior.DisplayName: Woodling Warrior
 	Woodling.DisplayName: Woodling
@@ -330,11 +611,11 @@ NPCs: {
 	Scavenger.DisplayName: Scavenger
 	ScaryBat.DisplayName: Scary Bat
 	SandThing.DisplayName: Sand Thing
-	RuinGhost2.DisplayName: Ruin Ghost2
-	RuinGhost1.DisplayName: Ruin Ghost1
+	RuinGhost2.DisplayName: Lanter Ruin Ghost
+	RuinGhost1.DisplayName: Ruin Ghost
 	Rogue.DisplayName: Rogue
 	RichSlime.DisplayName: Rich Slime
-	RGiantSlime.DisplayName: R Giant Slime
+	RGiantSlime.DisplayName: Red Giant Slime
 	QuartzBeetle.DisplayName: Quartz Beetle
 	PyramidRider.DisplayName: Pyramid Rider
 	PyramidHead.DisplayName: Pyramid Head
@@ -346,7 +627,7 @@ NPCs: {
 	PharaohCaster.DisplayName: Pharaoh Caster
 	Phantom.DisplayName: Phantom
 	Phabor.DisplayName: Phabor
-	PGiantSlime.DisplayName: P Giant Slime
+	PGiantSlime.DisplayName: Pink Giant Slime
 	Peepers.DisplayName: Peepers
 	Parasprite.DisplayName: Parasprite
 	OrcWarrior.DisplayName: Orc Warrior
@@ -385,7 +666,7 @@ NPCs: {
 
 		BossChecklistIntegration: {
 			EntryName: Titan
-			SpawnInfo: Use AncientWatch any time in Post-Moon Lord
+			SpawnInfo: Use Ancient Watch any time in Post-Moon Lord
 		}
 	}
 
@@ -413,8 +694,8 @@ NPCs: {
 	GraniteBeetle.DisplayName: Granite Beetle
 	GoplitOfficer.DisplayName: Goplit Officer
 	GoplitArcher.DisplayName: Goplit Archer
-	GoblinStandardBearer_Balloon.DisplayName: Goblin Standard Bearer_ Balloon
-	GoblinStandardBearer.DisplayName: Goblin Standard Bearer
+	GoblinStandardBearer_Balloon.DisplayName: Goblin Standard Bearer
+	GoblinStandardBearer.DisplayName: Goblin Standard Bearer on Balloon
 	GoblinBomber.DisplayName: Goblin Bomber
 	GoblinAssassin.DisplayName: Goblin Assassin
 	GloomySeer.DisplayName: Gloomy Seer
@@ -423,7 +704,7 @@ NPCs: {
 	GiantCrab.DisplayName: Giant Crab
 	GhostWarrior.DisplayName: Ghost Warrior
 	GhostKnight.DisplayName: Ghost Knight
-	GGiantSlime.DisplayName: G Giant Slime
+	GGiantSlime.DisplayName: Green Giant Slime
 	GeneralSnowman.DisplayName: General Snowman
 	Gelateen.DisplayName: Gelateen
 	Geerd.DisplayName: Geerd
@@ -450,9 +731,9 @@ NPCs: {
 	Dranix.DisplayName: Dranix
 	DragonSkull.DisplayName: Dragon Skull
 	Dinictis.DisplayName: Dinictis
-	DevourerofPlanets.DisplayName: Devourerof Planets
+	DevourerofPlanets.DisplayName: Devourer of Planets
 	DevilishTortoise.DisplayName: Devilish Tortoise
-	DesertPrincess2.DisplayName: Desert Princess2
+	DesertPrincess2.DisplayName: Young Desert Princess
 	DesertPrincess.DisplayName: Desert Princess
 	DesertMimic.DisplayName: Desert Mimic
 	Deimos.DisplayName: Deimos
@@ -462,7 +743,7 @@ NPCs: {
 	Cybermite.DisplayName: Cybermite
 	CrimsonBicholmere.DisplayName: Crimson Bicholmere
 	Crimer.DisplayName: Crimer
-	CreatorofNightmares.DisplayName: Creatorof Nightmares
+	CreatorofNightmares.DisplayName: Creator of Nightmares
 	CorruptedBicholmere.DisplayName: Corrupted Bicholmere
 	Coretaur.DisplayName: Coretaur
 	CoreSlime.DisplayName: Core Slime
@@ -480,7 +761,7 @@ NPCs: {
 		DisplayName: Wall Of Shadow
 
 		BossChecklistIntegration: {
-			EntryName: WallofShadow
+			EntryName: Wall of Shadow
 			SpawnInfo: Can be used in ritual of shadows if thrown into lava in underground and the Dryad is alive
 		}
 	}
@@ -506,7 +787,7 @@ NPCs: {
 		DisplayName: Tiki Totem
 
 		BossChecklistIntegration: {
-			EntryName: TikiTotem
+			EntryName: Tiki Totem
 			SpawnInfo: Use Mysterious Drum in jungle at night
 		}
 	}
@@ -518,11 +799,11 @@ NPCs: {
 	AngerSoul.DisplayName: Anger Soul
 
 	TheDarkEmperorTwo: {
-		DisplayName: The Dark Emperor Two
+		DisplayName: The Dark Emperor
 
 		BossChecklistIntegration: {
-			EntryName: TheDarkEmperor
-			SpawnInfo: Use EmperorCrown every time in post-Moon Lord
+			EntryName: The Dark Emperor
+			SpawnInfo: Use Emperor Crown every time in post-Moon Lord
 		}
 	}
 
@@ -535,8 +816,8 @@ NPCs: {
 		DisplayName: Space Whale
 
 		BossChecklistIntegration: {
-			EntryName: SpaceWhale
-			SpawnInfo: Use CosmicKrill every time in post-Moon Lord
+			EntryName: Space Whale
+			SpawnInfo: Use Cosmic Krill every time in post-Moon Lord
 		}
 	}
 
@@ -545,7 +826,7 @@ NPCs: {
 
 		BossChecklistIntegration: {
 			EntryName: Rukh
-			SpawnInfo: Use DesertCrown every time in desert
+			SpawnInfo: Use Desert Crown every time in desert
 		}
 	}
 
@@ -555,17 +836,17 @@ NPCs: {
 		DisplayName: Pixie Queen
 
 		BossChecklistIntegration: {
-			EntryName: PixieQueen
-			SpawnInfo: Use PixieinaJar in hallow at night
+			EntryName: Pixie Queen
+			SpawnInfo: Use Pixie In A Jar In Hallow At Night
 		}
 	}
 
-	Youwarkee2.DisplayName: Youwarkee2
+	Youwarkee2.DisplayName: Youwarkee
 	Youwarkee.DisplayName: Youwarkee
 	Varki.DisplayName: Varki
 	NovaFlier.DisplayName: Nova Flier
 	NovaBat.DisplayName: Nova Bat
-	NovaAlchemistC.DisplayName: Nova Alchemist C
+	NovaAlchemistC.DisplayName: Nova Alchemist
 	NovaAlchemist.DisplayName: Nova Alchemist
 	NovaPillar.DisplayName: Nova Pillar
 	Mothership.DisplayName: Mothership
@@ -580,17 +861,17 @@ NPCs: {
 		}
 	}
 
-	Clamper2.DisplayName: Clamper2
+	Clamper2.DisplayName: Clamper
 	Clamper.DisplayName: Clamper
 	MagmaLeechTail.DisplayName: Magma Leech Tail
 	MagmaLeechHead.DisplayName: Magma Leech Head
 	MagmaLeechBody.DisplayName: Magma Leech Body
 
 	StormJellyfish: {
-		DisplayName: Storm Jelly fish
+		DisplayName: Storm Jellyfish
 
 		BossChecklistIntegration: {
-			EntryName: StormJelly
+			EntryName: Storm Jellyfish
 			SpawnInfo: Use Storm Jelly
 		}
 	}
@@ -602,7 +883,7 @@ NPCs: {
 		DisplayName: Heater Of Worlds
 
 		BossChecklistIntegration: {
-			EntryName: HeaterOfWorldsHead
+			EntryName: Heater Of Worlds
 			SpawnInfo: Use Molten Heart in underworld
 		}
 	}
@@ -615,7 +896,7 @@ NPCs: {
 		DisplayName: Fungus Beetle
 
 		BossChecklistIntegration: {
-			EntryName: FungusBeetle
+			EntryName: Fungus Beetle
 			SpawnInfo: Use Mushroom Crystal
 		}
 	}
@@ -624,7 +905,7 @@ NPCs: {
 		DisplayName: Frost King
 
 		BossChecklistIntegration: {
-			EntryName: FrostKing
+			EntryName: Frost King
 			SpawnInfo: Use Frost Crown in snow biome
 		}
 	}
@@ -633,7 +914,7 @@ NPCs: {
 		DisplayName: Evil Corn
 
 		BossChecklistIntegration: {
-			EntryName: EvilCorn
+			EntryName: Evil Corn
 			SpawnInfo: Use Cursed Popcorn at night
 		}
 	}
@@ -642,7 +923,7 @@ NPCs: {
 		DisplayName: Cyber King
 
 		BossChecklistIntegration: {
-			EntryName: CyberKing
+			EntryName: Cyber King
 			SpawnInfo: Use Advanced Circuit at night
 		}
 	}
@@ -652,18 +933,17 @@ NPCs: {
 	CogLordHand.DisplayName: Cog Lord Hand
 	CogLordGun.DisplayName: Cog Lord Gun
 
-	CogLordCog: {
-		DisplayName: Cog Lord Cog
-
+	CogLord: {
 		BossChecklistIntegration: {
-			EntryName: CogLordCog
+			EntryName: Cog Lord
 			SpawnInfo: Use Artifact Engine at night
 		}
+
+		DisplayName: Cog Lord
 	}
 
 	CogLordArmSecond.DisplayName: Cog Lord Arm Second
 	CogLordArm.DisplayName: Cog Lord Arm
-	CogLord.DisplayName: Cog Lord
 	Quetzalcoatl.DisplayName: Quetzalcoatl
 	Naga.DisplayName: Naga
 
@@ -684,7 +964,7 @@ NPCs: {
 		DisplayName: True Andas
 
 		BossChecklistIntegration: {
-			EntryName: TrueAndas
+			EntryName: True Andas
 			SpawnInfo: Use Inferno Skull in the underworld
 		}
 	}
@@ -692,15 +972,15 @@ NPCs: {
 	MoltenSpirit.DisplayName: Molten Spirit
 	Andas.DisplayName: Andas
 	DragonMini.DisplayName: Dragon Mini
-	Dragon_LegB.DisplayName: Dragon_ Leg B
-	Dragon_BodyB.DisplayName: Dragon_ Body B
+	Dragon_LegB.DisplayName: Ancient Dragon
+	Dragon_BodyB.DisplayName: Ancient Dragon
 	PlagueSoul.DisplayName: Plague Soul
 
 	Dragon_HeadB: {
-		DisplayName: AncientDragon
+		DisplayName: Ancient Dragon
 
 		BossChecklistIntegration: {
-			EntryName: AncientDragon
+			EntryName: Ancient Dragon
 			SpawnInfo:
 				'''
 				Use the Rusty Lantern on the Ruin 
@@ -721,12 +1001,12 @@ NPCs: {
 	BoneFlyer.DisplayName: Bone Flyer
 	BoneFish.DisplayName: Bone Fish
 	BoneArcher.DisplayName: Bone Archer
-	BloodmoonWarrior3.DisplayName: Bloodmoon Warrior3
-	BloodmoonWarrior2.DisplayName: Bloodmoon Warrior2
-	BloodmoonWarrior1.DisplayName: Bloodmoon Warrior1
+	BloodmoonWarrior3.DisplayName: Bloodmoon Warrior
+	BloodmoonWarrior2.DisplayName: Bloodmoon Warrior
+	BloodmoonWarrior1.DisplayName: Bloodmoon Warrior
 	Blazer.DisplayName: Blazer
 	Bicholmere.DisplayName: Bicholmere
-	BGiantSlime.DisplayName: B Giant Slime
+	BGiantSlime.DisplayName: Blue Giant Slime
 	BetaWolf.DisplayName: Beta Wolf
 	Barmadillo.DisplayName: Barmadillo
 	Banshee.DisplayName: Banshee
@@ -746,6 +1026,7 @@ NPCs: {
 	Frostbyte.DisplayName: Frostbyte
 	Dot.DisplayName: Dot
 	Rukh.DisplayName: Rukh
+	CogLordCog.DisplayName: Cog Lord Cog
 }
 
 Config: {
@@ -1397,7 +1678,7 @@ Items: {
 
 	EaterofWorld: {
 		Tooltip: ""
-		DisplayName: Eaterof World
+		DisplayName: Eater of World
 	}
 
 	DrippingKnife: {
@@ -2693,7 +2974,7 @@ Items: {
 
 	EyeofInfinity: {
 		Tooltip: ""
-		DisplayName: Eyeof Infinity
+		DisplayName: Eye of Infinity
 	}
 
 	ExecutionerAxe: {
@@ -2723,7 +3004,7 @@ Items: {
 
 	EdgeofFrostKing: {
 		Tooltip: ""
-		DisplayName: Edgeof Frost King
+		DisplayName: Edge of Frost King
 	}
 
 	EarthBender: {
@@ -3023,7 +3304,7 @@ Items: {
 
 	WrathofWraith: {
 		Tooltip: ""
-		DisplayName: Wrathof Wraith
+		DisplayName: Wrath of Wraith
 	}
 
 	WickedRing: {
@@ -3103,7 +3384,7 @@ Items: {
 
 	SpearofJustice: {
 		Tooltip: NGAAAAAHHHHHHHHHHHHHHHHH!
-		DisplayName: Spearof Justice
+		DisplayName: Spear of Justice
 	}
 
 	SoulFlames: {
@@ -3123,7 +3404,7 @@ Items: {
 
 	ScourgeofFlames: {
 		Tooltip: Erupts three fire bolts
-		DisplayName: Scourgeof Flames
+		DisplayName: Scourge of Flames
 	}
 
 	SacredCross: {
@@ -3312,12 +3593,12 @@ Items: {
 
 	FlowerofAntimony: {
 		Tooltip: ""
-		DisplayName: Flowerof Antimony
+		DisplayName: Flower of Antimony
 	}
 
 	FlamesofDespair: {
 		Tooltip: Summons homing flames of oblivion
-		DisplayName: Flamesof Despair
+		DisplayName: Flames of Despair
 	}
 
 	Eyezor: {
@@ -3795,7 +4076,7 @@ Items: {
 
 	WallofShadowMask: {
 		Tooltip: ""
-		DisplayName: Wallof Shadow Mask
+		DisplayName: Wall of Shadow Mask
 	}
 
 	VultureKingMask: {
@@ -4155,7 +4436,7 @@ Items: {
 
 	UnpredictableСompass: {
 		Tooltip: Teleports you to a random location
-		DisplayName: UnpredictableСompass
+		DisplayName: Unpredictable Сompass
 	}
 
 	TornWings: {
@@ -4534,7 +4815,7 @@ Items: {
 
 	WallofShadowTrophy: {
 		Tooltip: ""
-		DisplayName: Wallof Shadow Trophy
+		DisplayName: Wall of Shadow Trophy
 	}
 
 	VultureKingTrophy: {
@@ -4854,7 +5135,7 @@ Items: {
 
 	GloomstoneWallItem: {
 		Tooltip: ""
-		DisplayName: Gloomstone Wall Item
+		DisplayName: Gloomstone Wall
 	}
 
 	GloomstoneWorkbench: {
@@ -5913,7 +6194,7 @@ Items: {
 
 	ToothofAbraxas: {
 		Tooltip: ""
-		DisplayName: Toothof Abraxas
+		DisplayName: Tooth of Abraxas
 	}
 
 	TimeTissue: {
@@ -5933,12 +6214,12 @@ Items: {
 
 	TearsofDeath: {
 		Tooltip: Unstable ingredient
-		DisplayName: Tearsof Death
+		DisplayName: Tears of Death
 	}
 
 	StoneofLife: {
 		Tooltip: ""
-		DisplayName: Stoneof Life
+		DisplayName: Stone of Life
 	}
 
 	StoneDice: {
@@ -5963,7 +6244,7 @@ Items: {
 
 	SoulofMind: {
 		Tooltip: The essence of perfect intellect
-		DisplayName: Soulof Mind
+		DisplayName: Soul Of Mind
 	}
 
 	SkullTeeth: {
@@ -6023,7 +6304,7 @@ Items: {
 
 	PieceofFlesh: {
 		Tooltip: ""
-		DisplayName: Pieceof Flesh
+		DisplayName: Piece of Flesh
 	}
 
 	PhantomSoul: {
@@ -6222,7 +6503,7 @@ Items: {
 
 	HuskofDusk: {
 		Tooltip: ""
-		DisplayName: Huskof Dusk
+		DisplayName: Husk of Dusk
 	}
 
 	HardCometiteOre: {
@@ -6287,12 +6568,12 @@ Items: {
 
 	EyeofOblivion: {
 		Tooltip: ""
-		DisplayName: Eyeof Oblivion
+		DisplayName: Eye of Oblivion
 	}
 
 	EssenseofJungle: {
 		Tooltip: Plants fill you with determination.
-		DisplayName: Essenseof Jungle
+		DisplayName: Essense of Jungle
 	}
 
 	EarthFragment: {
@@ -6863,7 +7144,7 @@ Items: {
 
 	AltarofEnchantments: {
 		Tooltip: Allows you to improve some items
-		DisplayName: Altarof Enchantments
+		DisplayName: Altar Gof Enchantments
 	}
 
 	AlchemyStation: {
@@ -7068,12 +7349,8 @@ Items: {
 	}
 
 	StoneofKnowledge: {
-		Tooltip:
-			'''
-			Summons the Trinity
-			Requires any mech. boss to have been slain, hardmode and night time
-			'''
-		DisplayName: Stoneof Knowledge
+		Tooltip: Summons the Trinity
+		DisplayName: Stone of Knowledge
 	}
 
 	ShadowRelic: {
@@ -7120,7 +7397,7 @@ Items: {
 			Requires any mech. boss to have been slain, the the hallow biome and night time
 			I think something wants to get out of the jar...
 			'''
-		DisplayName: Pixieina Jar
+		DisplayName: Pixie In A Jar
 	}
 
 	PetalBand: {
@@ -7283,7 +7560,7 @@ Items: {
 
 	PickaxeofBloom: {
 		Tooltip: ""
-		DisplayName: Pickaxeof Bloom
+		DisplayName: Pickaxe Of Bloom
 	}
 
 	IndifferentTotemMask: {
@@ -7303,7 +7580,7 @@ Items: {
 
 	SoulofFight: {
 		Tooltip: The essence of endless battle
-		DisplayName: Soulof Fight
+		DisplayName: Soul Of Fight
 	}
 
 	SBCCannonballAmmo: {
@@ -7347,7 +7624,7 @@ Items: {
 
 	WallofShadowBag: {
 		Tooltip: ""
-		DisplayName: Wallof Shadow Bag
+		DisplayName: Wall of Shadow Bag
 	}
 
 	VultureKingBag: {
@@ -7636,7 +7913,11 @@ Items: {
 	}
 
 	StoneLeggings: {
-		Tooltip: 10% reduced movement speed\nThe stone protects you, but makes you slower
+		Tooltip:
+			'''
+			10% reduced movement speed
+			The stone protects you, but makes you slower
+			'''
 		DisplayName: Stone Leggings
 	}
 
@@ -7647,7 +7928,11 @@ Items: {
 	}
 
 	StoneChestplate: {
-		Tooltip: 10% reduced melee speed\nThe stone protects you, but makes you slower
+		Tooltip:
+			'''
+			10% reduced melee speed
+			The stone protects you, but makes you slower
+			'''
 		DisplayName: Stone Chestplate
 	}
 
@@ -7724,7 +8009,7 @@ Items: {
 	}
 
 	SilkBanner: {
-		Tooltip: Increases defense by 15and grants thorn effect if placed
+		Tooltip: Increases defense by 15 and grants thorn effect if placed
 		DisplayName: Silk Banner
 	}
 
@@ -9600,7 +9885,7 @@ Items: {
 
 	PalmwoodShield: {
 		Tooltip: ""
-		DisplayName: Palmwood Shield
+		DisplayName: Palm Wood Shield
 	}
 
 	OrganicShield: {
@@ -9754,7 +10039,7 @@ Items: {
 
 	HeartofAtis: {
 		Tooltip: Increases life regeneration
-		DisplayName: Heartof Atis
+		DisplayName: Heart of Atis
 	}
 
 	HeartMagnet: {
@@ -10032,7 +10317,7 @@ Items: {
 
 	BorealwoodShield: {
 		Tooltip: ""
-		DisplayName: Borealwood Shield
+		DisplayName: Boreal wood Shield
 	}
 
 	Bloomstone: {
@@ -10119,7 +10404,7 @@ Items: {
 			8% decreased magic damage
 			Increases maximum mana by 40
 			'''
-		DisplayName: Aegisof Darkness
+		DisplayName: Aegis of Darkness
 	}
 
 	RustySlasher: {
@@ -10134,12 +10419,12 @@ Items: {
 
 	RuinChestItems: {
 		Tooltip: ""
-		DisplayName: Ruin Chest Items
+		DisplayName: Ruin Chest
 	}
 
 	RuinAltarr: {
 		Tooltip: ""
-		DisplayName: Ruin Altarr
+		DisplayName: Ruin Altar
 	}
 
 	FirebenderTome: {
@@ -10169,7 +10454,7 @@ Items: {
 
 	GlacierWoodWallItem: {
 		Tooltip: ""
-		DisplayName: Glacier Wood Wall Item
+		DisplayName: Glacier Wood Wall
 	}
 
 	GlacierWoodSword: {
@@ -10279,12 +10564,12 @@ Items: {
 
 	IceChestt: {
 		Tooltip: ""
-		DisplayName: Ice Chestt
+		DisplayName: Ice Chest
 	}
 
 	IceChestItem: {
 		Tooltip: ""
-		DisplayName: Ice Chest Item
+		DisplayName: Ice Chest
 	}
 
 	IceChandelier: {
@@ -10372,12 +10657,12 @@ Items: {
 
 	IceWallW: {
 		Tooltip: ""
-		DisplayName: Ice Wall W
+		DisplayName: Ice Wall
 	}
 
 	IceOreItem: {
 		Tooltip: ""
-		DisplayName: Ice Ore Item
+		DisplayName: Ice Ore
 	}
 
 	IceKey: {
@@ -10387,17 +10672,17 @@ Items: {
 
 	IceBlockB: {
 		Tooltip: ""
-		DisplayName: Ice Block B
+		DisplayName: Ice Block
 	}
 
 	DungeonWallItem: {
 		Tooltip: ""
-		DisplayName: Dungeon Wall Item
+		DisplayName: Dungeon Wall
 	}
 
 	DungeonBlockItem: {
 		Tooltip: ""
-		DisplayName: Dungeon Block Item
+		DisplayName: Dungeon Block
 	}
 
 	Romert: {
@@ -10839,7 +11124,7 @@ Buffs: {
 
 	ConcentrationofFear: {
 		Description: The corruptor will fight for you
-		DisplayName: Concentrationof Fear
+		DisplayName: Concentration of Fear
 	}
 
 	ConcentratedTinctureBuff: {
@@ -10894,17 +11179,17 @@ Buffs: {
 
 	BottledSoulOfSightBuff: {
 		Description: Shows the location of enemies
-		DisplayName: BBottled Soul of Sight
+		DisplayName: Bottled Soul Of Sight
 	}
 
 	BottledSoulOfNightBuff: {
 		Description: 8% increased melee speed
-		DisplayName: Bottled Soul of Night
+		DisplayName: Bottled Soul Of Night
 	}
 
 	BottledSoulOfMindBuff: {
 		Description: Shows the location of treasure and ore
-		DisplayName: Bottled Soul of Mind
+		DisplayName: Bottled Soul Of Mind
 	}
 
 	BottledSoulOfMightBuff: {
@@ -11015,7 +11300,7 @@ Tiles: {
 	VoidBarTile.MapEntry: Void Bar
 	TrinityTrophyTile.MapEntry: Trinity Trophy
 	TikiTotemTrophyTile.MapEntry: Tiki Totem Trophy
-	TentTile.MapEntry: Tent Tile
+	TentTile.MapEntry: Tent
 	TatteredBannerTile.MapEntry: Tattered Banner
 	StormJellyfishTrophyTile.MapEntry: Storm Jellyfish Trophy
 	StoneWorkbenchTile.MapEntry: Stone Workbench
@@ -11025,247 +11310,247 @@ Tiles: {
 	StonePianoTile.MapEntry: Stone Piano
 	StoneGrandfatherClockTile.MapEntry: Stone Grandfather Clock
 	StoneDresserTile.MapEntry: Stone Dresser
-	StoneDoorOpen.MapEntry: Stone Door Open
-	StoneDoorClosed.MapEntry: Stone Door Closed
+	StoneDoorOpen.MapEntry: Stone Door
+	StoneDoorClosed.MapEntry: Stone Door
 
 	StoneChestTile: {
 		MapEntry1: Mods.TremorMod.Tiles.StoneChestTile.MapEntry1
-		MapEntry0: Mods.TremorMod.Tiles.StoneChestTile.MapEntry0
+		MapEntry0: Stone Chest
 	}
 
-	StoneChairTile.MapEntry: Stone Chair Tile
-	StoneBookcaseTile.MapEntry: Stone Bookcase Tile
-	StoneBenchTile.MapEntry: Stone Bench Tile
-	StoneBedTile.MapEntry: Stone Bed Tile
-	StoneBathtubTile.MapEntry: Stone Bathtub Tile
-	StarvilTile.MapEntry: Starvil Tile
-	StarBarTile.MapEntry: Star Bar Tile
-	SpaceWhaleTrophyTile.MapEntry: Space Whale Trophy Tile
-	SilkTentTile.MapEntry: Silk Tent Tile
+	StoneChairTile.MapEntry: Stone Chair
+	StoneBookcaseTile.MapEntry: Stone Bookcase
+	StoneBenchTile.MapEntry: Stone Bench
+	StoneBedTile.MapEntry: Stone Bed
+	StoneBathtubTile.MapEntry: Stone Bathtub
+	StarvilTile.MapEntry: Starvil
+	StarBarTile.MapEntry: Star Bar
+	SpaceWhaleTrophyTile.MapEntry: Space Whale Trophy
+	SilkTentTile.MapEntry: Silk Tent
 	SilkBannerTile.MapEntry: Silk Banner Tile
-	ShadewoodArmchairTile.MapEntry: Shadewood Armchair Tile
-	ScaryDoorOpen.MapEntry: Scary Door Open
-	ScaryDoorClosed.MapEntry: Scary Door Closed
-	ScarecrowTile.MapEntry: Scarecrow Tile
-	SandstoneWorkbenchTile.MapEntry: Sandstone Workbench Tile
-	SandstoneTableTile.MapEntry: Sandstone Table Tile
-	SandstoneSinkTile.MapEntry: Sandstone Sink Tile
-	SandstonePianoTile.MapEntry: Sandstone Piano Tile
-	SandstoneLanternTile.MapEntry: Sandstone Lantern Tile
-	SandstoneLampTile.MapEntry: Sandstone Lamp Tile
-	SandstoneGrandfatherClockTile.MapEntry: Sandstone Grandfather Clock Tile
-	SandstoneDresserTile.MapEntry: Sandstone Dresser Tile
-	SandstoneDoorOpen.MapEntry: Sandstone Door Open
-	SandstoneDoorClosed.MapEntry: Sandstone Door Closed
-	SandstoneChestTile.MapEntry: Sandstone Chest Tile
-	SandstoneChandelierTile.MapEntry: Sandstone Chandelier Tile
-	SandstoneChairTile.MapEntry: Sandstone Chair Tile
-	SandstoneCandleTile.MapEntry: Sandstone Candle Tile
-	SandstoneCandelabraTile.MapEntry: Sandstone Candelabra Tile
-	SandstoneBookcaseTile.MapEntry: Sandstone Bookcase Tile
-	SandstoneBenchTile.MapEntry: Sandstone Bench Tile
-	SandstoneBedTile.MapEntry: Sandstone Bed Tile
-	SandstoneBathtubTile.MapEntry: Sandstone Bathtub Tile
-	SandstoneBarTile.MapEntry: Sandstone Bar Tile
-	SalamanderSkinTile.MapEntry: Salamander Skin Tile
-	RupicideBarTile.MapEntry: Rupicide Bar Tile
-	RuneBarTile.MapEntry: Rune Bar Tile
-	RichMahoganyArmchairTile.MapEntry: Rich Mahogany Armchair Tile
-	RedSteelBarTile.MapEntry: Red Steel Bar Tile
-	RedChristmasStockingTile.MapEntry: Red Christmas Stocking Tile
-	RedBrickChimneyTile.MapEntry: Red Brick Chimney Tile
-	RecyclerofMatterTile.MapEntry: Recyclerof Matter Tile
-	PlatinumGlobeTile.MapEntry: Platinum Globe Tile
-	PixieQueenTrophyTile.MapEntry: Pixie Queen Trophy Tile
-	PearlwoodArmchairTile.MapEntry: Pearlwood Armchair Tile
-	ParadoxTitanTrophyTile.MapEntry: Paradox Titan Trophy Tile
-	PalmWoodArmchairTile.MapEntry: Palm Wood Armchair Tile
-	NovaMonolithTile.MapEntry: Nova Monolith Tile
-	NightmareOreTile.MapEntry: Nightmare Ore Tile
-	NightmareBrickTile.MapEntry: Nightmare Brick Tile
-	NightmareBarTile.MapEntry: Nightmare Bar Tile
-	NecromaniacWorkbenchTile.MapEntry: Necromaniac Workbench Tile
-	NanoBarTile.MapEntry: Nano Bar Tile
-	MinersLampTile.MapEntry: Miners Lamp Tile
-	MineralTransmutatorTile.MapEntry: Mineral Transmutator Tile
-	MarbleVaseTile.MapEntry: Marble Vase Tile
-	ManaGeneratorTile.MapEntry: Mana Generator Tile
-	MagmoniumBarTile.MapEntry: Magmonium Bar Tile
-	MagicWorkbenchTile.MapEntry: Magic Workbench Tile
-	LunarRootTile.MapEntry: Lunar Root Tile
-	LifeMachineTile.MapEntry: Life Machine Tile
-	LadderTile.MapEntry: Ladder Tile
-	IceCandleTile.MapEntry: Ice Candle Tile
-	HeaterOfWorldsTrophyTile.MapEntry: Heater Of Worlds Trophy Tile
-	HardCometiteOreTile.MapEntry: Hard Cometite Ore Tile
-	HardCometiteBarTile.MapEntry: Hard Cometite Bar Tile
-	GreenChristmasStockingTile.MapEntry: Green Christmas Stocking Tile
-	GreatAnvilTile.MapEntry: Great Anvil Tile
-	GoldGlobeTile.MapEntry: Gold Globe Tile
-	GloomstoneWorkbenchTile.MapEntry: Gloomstone Workbench Tile
-	GloomstoneTableTile.MapEntry: Gloomstone Table Tile
-	GloomstoneSinkTiles.MapEntry: Gloomstone Sink Tiles
-	GloomstonePlatformTile.MapEntry: Gloomstone Platform Tile
-	GloomstonePianoTile.MapEntry: Gloomstone Piano Tile
-	GloomstoneLanternTile.MapEntry: Gloomstone Lantern Tile
-	GloomstoneLampTile.MapEntry: Gloomstone Lamp Tile
-	GloomstoneGrandfatherClockTile.MapEntry: Gloomstone Grandfather Clock Tile
-	GloomstoneDresserTile.MapEntry: Gloomstone Dresser Tile
-	GloomstoneDoorOpen.MapEntry: Gloomstone Door Open
-	GloomstoneDoorClosed.MapEntry: Gloomstone Door Closed
+	ShadewoodArmchairTile.MapEntry: Shadewood Armchair
+	ScaryDoorOpen.MapEntry: Scary Door
+	ScaryDoorClosed.MapEntry: Scary Door
+	ScarecrowTile.MapEntry: Scarecrow
+	SandstoneWorkbenchTile.MapEntry: Sandstone Workbench
+	SandstoneTableTile.MapEntry: Sandstone Table
+	SandstoneSinkTile.MapEntry: Sandstone Sink
+	SandstonePianoTile.MapEntry: Sandstone Piano
+	SandstoneLanternTile.MapEntry: Sandstone Lantern
+	SandstoneLampTile.MapEntry: Sandstone Lamp
+	SandstoneGrandfatherClockTile.MapEntry: Sandstone Grandfather Clock
+	SandstoneDresserTile.MapEntry: Sandstone Dresser
+	SandstoneDoorOpen.MapEntry: Sandstone Door
+	SandstoneDoorClosed.MapEntry: Sandstone Door
+	SandstoneChestTile.MapEntry: Sandstone Chest
+	SandstoneChandelierTile.MapEntry: Sandstone Chandelier
+	SandstoneChairTile.MapEntry: Sandstone Chair
+	SandstoneCandleTile.MapEntry: Sandstone Candle
+	SandstoneCandelabraTile.MapEntry: Sandstone Candelabra
+	SandstoneBookcaseTile.MapEntry: Sandstone Bookcase
+	SandstoneBenchTile.MapEntry: Sandstone Bench
+	SandstoneBedTile.MapEntry: Sandstone Bed
+	SandstoneBathtubTile.MapEntry: Sandstone Bathtub
+	SandstoneBarTile.MapEntry: Sandstone Bar
+	SalamanderSkinTile.MapEntry: Salamander Skin
+	RupicideBarTile.MapEntry: Rupicide Bar
+	RuneBarTile.MapEntry: Rune Bar
+	RichMahoganyArmchairTile.MapEntry: Rich Mahogany Armchair
+	RedSteelBarTile.MapEntry: Red Steel Bar
+	RedChristmasStockingTile.MapEntry: Red Christmas Stocking
+	RedBrickChimneyTile.MapEntry: Red Brick Chimney
+	RecyclerofMatterTile.MapEntry: Recyclerof Matter
+	PlatinumGlobeTile.MapEntry: Platinum Globe
+	PixieQueenTrophyTile.MapEntry: Pixie Queen Trophy
+	PearlwoodArmchairTile.MapEntry: Pearlwood Armchair
+	ParadoxTitanTrophyTile.MapEntry: Paradox Titan Trophy
+	PalmWoodArmchairTile.MapEntry: Palm Wood Armchair
+	NovaMonolithTile.MapEntry: Nova Monolith
+	NightmareOreTile.MapEntry: Nightmare Ore
+	NightmareBrickTile.MapEntry: Nightmare Brick
+	NightmareBarTile.MapEntry: Nightmare Bar
+	NecromaniacWorkbenchTile.MapEntry: Necromaniac Workbench
+	NanoBarTile.MapEntry: Nano Bar
+	MinersLampTile.MapEntry: Miners Lamp
+	MineralTransmutatorTile.MapEntry: Mineral Transmutator
+	MarbleVaseTile.MapEntry: Marble Vase
+	ManaGeneratorTile.MapEntry: Mana Generator
+	MagmoniumBarTile.MapEntry: Magmonium Bar
+	MagicWorkbenchTile.MapEntry: Magic Workbench
+	LunarRootTile.MapEntry: Lunar Root
+	LifeMachineTile.MapEntry: Life Machine
+	LadderTile.MapEntry: Ladder
+	IceCandleTile.MapEntry: Ice Candle
+	HeaterOfWorldsTrophyTile.MapEntry: Heater Of Worlds Trophy
+	HardCometiteOreTile.MapEntry: Hard Cometite Ore
+	HardCometiteBarTile.MapEntry: Hard Cometite Bar
+	GreenChristmasStockingTile.MapEntry: Green Christmas Stocking
+	GreatAnvilTile.MapEntry: Great Anvil
+	GoldGlobeTile.MapEntry: Gold Globe
+	GloomstoneWorkbenchTile.MapEntry: Gloomstone Workbench
+	GloomstoneTableTile.MapEntry: Gloomstone Table
+	GloomstoneSinkTiles.MapEntry: Gloomstone Sink
+	GloomstonePlatformTile.MapEntry: Gloomstone Platform
+	GloomstonePianoTile.MapEntry: Gloomstone Piano
+	GloomstoneLanternTile.MapEntry: Gloomstone Lantern
+	GloomstoneLampTile.MapEntry: Gloomstone Lamp
+	GloomstoneGrandfatherClockTile.MapEntry: Gloomstone Grandfather Clock
+	GloomstoneDresserTile.MapEntry: Gloomstone Dresser
+	GloomstoneDoorOpen.MapEntry: Gloomstone Door
+	GloomstoneDoorClosed.MapEntry: Gloomstone Door
 
 	GloomstoneChestTile: {
 		MapEntry1: Mods.TremorMod.Tiles.GloomstoneChestTile.MapEntry1
-		MapEntry0: Mods.TremorMod.Tiles.GloomstoneChestTile.MapEntry0
+		MapEntry0: Gloomstone Chest
 	}
 
-	GloomstoneChandelierTile.MapEntry: Gloomstone Chandelier Tile
-	GloomstoneChairTile.MapEntry: Gloomstone Chair Tile
-	GloomstoneCandleTile.MapEntry: Gloomstone Candle Tile
-	GloomstoneCandelabraTile.MapEntry: Gloomstone Candelabra Tile
-	GloomstoneBrickTile.MapEntry: Gloomstone Brick Tile
-	GloomstoneBookcaseTile.MapEntry: Gloomstone Bookcase Tile
-	GloomstoneBenchTile.MapEntry: Gloomstone Bench Tile
-	GloomstoneBedTile.MapEntry: Gloomstone Bed Tile
-	GloomstoneBathtubTile.MapEntry: Gloomstone Bathtub Tile
-	GlassDoorOpen.MapEntry: Glass Door Open
-	GlassDoorClosed.MapEntry: Glass Door Closed
-	FungusBeetleTrophyTile.MapEntry: Fungus Beetle Trophy Tile
-	FrostoneOreTile.MapEntry: Frostone Ore Tile
-	FrostoneBarTile.MapEntry: Frostone Bar Tile
-	FrostKingTrophyTile.MapEntry: Frost King Trophy Tile
-	FleshWorkstationTile.MapEntry: Flesh Workstation Tile
-	EyeMonolithTile.MapEntry: Eye Monolith Tile
-	EvilCornTrophyTile.MapEntry: Evil Corn Trophy Tile
-	EvershinyBarTile.MapEntry: Evershiny Bar Tile
-	EbonwoodArmchairTile.MapEntry: Ebonwood Armchair Tile
-	EbonstoneWorkbenchTile.MapEntry: Ebonstone Workbench Tile
-	EbonstoneTableTile.MapEntry: Ebonstone Table Tile
-	EbonstoneSinkTile.MapEntry: Ebonstone Sink Tile
-	EbonstonePlatformTile.MapEntry: Ebonstone Platform Tile
-	EbonstonePianoTile.MapEntry: Ebonstone Piano Tile
-	EbonstoneGrandfatherClockTile.MapEntry: Ebonstone Grandfather Clock Tile
-	EbonstoneDresserTile.MapEntry: Ebonstone Dresser Tile
-	EbonstoneDoorOpen.MapEntry: Ebonstone Door Open
-	EbonstoneDoorClosed.MapEntry: Ebonstone Door Closed
-	EbonstoneChestTile.MapEntry: Ebonstone Chest Tile
-	EbonstoneChairTile.MapEntry: Ebonstone Chair Tile
-	EbonstoneBookcaseTile.MapEntry: Ebonstone Bookcase Tile
-	EbonstoneBenchTile.MapEntry: Ebonstone Bench Tile
-	EbonstoneBedTile.MapEntry: Ebonstone Bed Tile
-	EbonstoneBathtubTile.MapEntry: Ebonstone Bathtub Tile
-	DoombrickTile.MapEntry: Doombrick Tile
-	DivineForgeTile.MapEntry: Divine Forge Tile
-	DevilForgeTile.MapEntry: Devil Forge Tile
-	DarkEmperorTrophyTile.MapEntry: Dark Emperor Trophy Tile
-	CyberKingTrophyTile.MapEntry: Cyber King Trophy Tile
-	CursedBannerTile.MapEntry: Cursed Banner Tile
-	CrimstoneWorkbenchTile.MapEntry: Crimstone Workbench Tile
-	CrimstoneTableTile.MapEntry: Crimstone Table Tile
-	CrimstoneSinkTile.MapEntry: Crimstone Sink Tile
-	CrimstonePlatformTile.MapEntry: Crimstone Platform Tile
-	CrimstonePianoTile.MapEntry: Crimstone Piano Tile
-	CrimstoneGrandfatherClockTile.MapEntry: Crimstone Grandfather Clock Tile
-	CrimstoneDresserTile.MapEntry: Crimstone Dresser Tile
-	CrimstoneDoorOpen.MapEntry: Crimstone Door Open
-	CrimstoneDoorClosed.MapEntry: Crimstone Door Closed
+	GloomstoneChandelierTile.MapEntry: Gloomstone Chandelier
+	GloomstoneChairTile.MapEntry: Gloomstone Chair
+	GloomstoneCandleTile.MapEntry: Gloomstone Candle
+	GloomstoneCandelabraTile.MapEntry: Gloomstone Candelabra
+	GloomstoneBrickTile.MapEntry: Gloomstone Brick
+	GloomstoneBookcaseTile.MapEntry: Gloomstone Bookcase
+	GloomstoneBenchTile.MapEntry: Gloomstone Bench
+	GloomstoneBedTile.MapEntry: Gloomstone Bed
+	GloomstoneBathtubTile.MapEntry: Gloomstone Bathtub
+	GlassDoorOpen.MapEntry: Glass Door
+	GlassDoorClosed.MapEntry: Glass Door
+	FungusBeetleTrophyTile.MapEntry: Fungus Beetle Trophy
+	FrostoneOreTile.MapEntry: Frostone Ore
+	FrostoneBarTile.MapEntry: Frostone Bar
+	FrostKingTrophyTile.MapEntry: Frost King Trophy
+	FleshWorkstationTile.MapEntry: Flesh Workstation
+	EyeMonolithTile.MapEntry: Eye Monolith
+	EvilCornTrophyTile.MapEntry: Evil Corn Trophy
+	EvershinyBarTile.MapEntry: Evershiny Bar
+	EbonwoodArmchairTile.MapEntry: Ebonwood Armchair
+	EbonstoneWorkbenchTile.MapEntry: Ebonstone Workbench
+	EbonstoneTableTile.MapEntry: Ebonstone Table
+	EbonstoneSinkTile.MapEntry: Ebonstone Sink
+	EbonstonePlatformTile.MapEntry: Ebonstone Platform
+	EbonstonePianoTile.MapEntry: Ebonstone Piano
+	EbonstoneGrandfatherClockTile.MapEntry: Ebonstone Grandfather Clock
+	EbonstoneDresserTile.MapEntry: Ebonstone Dresser
+	EbonstoneDoorOpen.MapEntry: Ebonstone Door
+	EbonstoneDoorClosed.MapEntry: Ebonstone Door
+	EbonstoneChestTile.MapEntry: Ebonstone Chest
+	EbonstoneChairTile.MapEntry: Ebonstone Chair
+	EbonstoneBookcaseTile.MapEntry: Ebonstone Bookcase
+	EbonstoneBenchTile.MapEntry: Ebonstone Bench
+	EbonstoneBedTile.MapEntry: Ebonstone Bed
+	EbonstoneBathtubTile.MapEntry: Ebonstone Bathtub
+	DoombrickTile.MapEntry: Doombrick
+	DivineForgeTile.MapEntry: Divine Forge
+	DevilForgeTile.MapEntry: Devil Forge
+	DarkEmperorTrophyTile.MapEntry: Dark Emperor Trophy
+	CyberKingTrophyTile.MapEntry: Cyber King Trophy
+	CursedBannerTile.MapEntry: Cursed Banner
+	CrimstoneWorkbenchTile.MapEntry: Crimstone Workbench
+	CrimstoneTableTile.MapEntry: Crimstone Table
+	CrimstoneSinkTile.MapEntry: Crimstone Sink
+	CrimstonePlatformTile.MapEntry: Crimstone Platform
+	CrimstonePianoTile.MapEntry: Crimstone Piano
+	CrimstoneGrandfatherClockTile.MapEntry: Crimstone Grandfather Clock
+	CrimstoneDresserTile.MapEntry: Crimstone Dresser
+	CrimstoneDoorOpen.MapEntry: Crimstone Door
+	CrimstoneDoorClosed.MapEntry: Crimstone Door
 
 	CrimstoneChestTile: {
 		MapEntry1: Mods.TremorMod.Tiles.CrimstoneChestTile.MapEntry1
 		MapEntry0: Mods.TremorMod.Tiles.CrimstoneChestTile.MapEntry0
 	}
 
-	CrimstoneChairTile.MapEntry: Crimstone Chair Tile
-	CrimstoneBookcaseTile.MapEntry: Crimstone Bookcase Tile
-	CrimstoneBenchTile.MapEntry: Crimstone Bench Tile
-	CrimstoneBedTile.MapEntry: Crimstone Bed Tile
-	CrimstoneBathtubTile.MapEntry: Crimstone Bathtub Tile
-	CreepyThroneTile.MapEntry: Creepy Throne Tile
-	CometiteOreTile.MapEntry: Cometite Ore Tile
-	CometiteBarTile.MapEntry: Cometite Bar Tile
-	CollapsiumOreTile.MapEntry: Collapsium Ore Tile
-	CollapsiumBarTile.MapEntry: Collapsium Bar Tile
-	CogLordTrophyTile.MapEntry: Cog Lord Trophy Tile
-	CogLordMusicBoxTile.MapEntry: Cog Lord Music Box Tile
+	CrimstoneChairTile.MapEntry: Crimstone Chair
+	CrimstoneBookcaseTile.MapEntry: Crimstone Bookcase
+	CrimstoneBenchTile.MapEntry: Crimstone Bench
+	CrimstoneBedTile.MapEntry: Crimstone Bed
+	CrimstoneBathtubTile.MapEntry: Crimstone Bathtub
+	CreepyThroneTile.MapEntry: Creepy Throne
+	CometiteOreTile.MapEntry: Cometite Ore
+	CometiteBarTile.MapEntry: Cometite Bar
+	CollapsiumOreTile.MapEntry: Collapsium Ore
+	CollapsiumBarTile.MapEntry: Collapsium Bar
+	CogLordTrophyTile.MapEntry: Cog Lord Trophy
+	CogLordMusicBoxTile.MapEntry: Cog Lord Music Box
 	CoalBlock.MapEntry: Coal Block
-	ChristmasFireplaceTile.MapEntry: Christmas Fireplace Tile
-	ChaosBarTile.MapEntry: Chaos Bar Tile
-	CandyBarTile.MapEntry: Candy Bar Tile
-	BulbTorchTile.MapEntry: Bulb Torch Tile
-	BrutalliskTrophyTile.MapEntry: Brutallisk Trophy Tile
-	BronzeBarTile.MapEntry: Bronze Bar Tile
-	BrassBarTile.MapEntry: Brass Bar Tile
-	BottledSoulOfSightTile.MapEntry: Bottled Soul Of Sight Tile
-	BottledSoulOfNightTile.MapEntry: Bottled Soul Of Night Tile
-	BottledSoulOfMindTile.MapEntry: Bottled Soul Of Mind Tile
-	BottledSoulOfMightTile.MapEntry: Bottled Soul Of Might Tile
-	BottledSoulOfLightTile.MapEntry: Bottled Soul Of Light Tile
-	BottledSoulOfFrightTile.MapEntry: Bottled Soul Of Fright Tile
-	BottledSoulOfFlightTile.MapEntry: Bottled Soul Of Flight Tile
-	BorealWoodArmchairTile.MapEntry: Boreal Wood Armchair Tile
-	BoneThroneTile.MapEntry: Bone Throne Tile
-	BlueChristmasStockingTile.MapEntry: Blue Christmas Stocking Tile
-	BlizzardMusicBoxTile.MapEntry: Blizzard Music Box Tile
-	BlastFurnaceTile.MapEntry: Blast Furnace Tile
-	ArmchairTile.MapEntry: Armchair Tile
-	ArgiteOreTile.MapEntry: Argite Ore Tile
-	ArgiteBarTile.MapEntry: Argite Bar Tile
-	AngeliteOreTile.MapEntry: Angelite Ore Tile
-	AngeliteBarTile.MapEntry: Angelite Bar Tile
-	AndasTrophyTile.MapEntry: Andas Trophy Tile
-	AncientDragonTrophyTile.MapEntry: Ancient Dragon Trophy Tile
-	AncientBannerTile.MapEntry: Ancient Banner Tile
-	AltarofEnchantmentsTile.MapEntry: Altarof Enchantments Tile
-	AlchemyStationTile.MapEntry: Alchemy Station Tile
-	AlchematorTile.MapEntry: Alchemator Tile
-	AlchemasterTrophyTile.MapEntry: Alchemaster Trophy Tile
+	ChristmasFireplaceTile.MapEntry: Christmas Fireplace
+	ChaosBarTile.MapEntry: Chaos Bar
+	CandyBarTile.MapEntry: Candy Bar
+	BulbTorchTile.MapEntry: Bulb Torch
+	BrutalliskTrophyTile.MapEntry: Brutallisk Trophy
+	BronzeBarTile.MapEntry: Bronze Bar
+	BrassBarTile.MapEntry: Brass Bar
+	BottledSoulOfSightTile.MapEntry: Bottled Soul Of Sight
+	BottledSoulOfNightTile.MapEntry: Bottled Soul Of Night
+	BottledSoulOfMindTile.MapEntry: Bottled Soul Of Mind
+	BottledSoulOfMightTile.MapEntry: Bottled Soul Of Might
+	BottledSoulOfLightTile.MapEntry: Bottled Soul Of Light
+	BottledSoulOfFrightTile.MapEntry: Bottled Soul Of Fright
+	BottledSoulOfFlightTile.MapEntry: Bottled Soul Of Flight
+	BorealWoodArmchairTile.MapEntry: Boreal Wood Armchair
+	BoneThroneTile.MapEntry: Bone Throne
+	BlueChristmasStockingTile.MapEntry: Blue Christmas Stocking
+	BlizzardMusicBoxTile.MapEntry: Blizzard Music Box
+	BlastFurnaceTile.MapEntry: Blast Furnace
+	ArmchairTile.MapEntry: Armchair
+	ArgiteOreTile.MapEntry: Argite Ore
+	ArgiteBarTile.MapEntry: Argite Bar
+	AngeliteOreTile.MapEntry: Angelite Ore
+	AngeliteBarTile.MapEntry: Angelite Bar
+	AndasTrophyTile.MapEntry: Andas Trophy
+	AncientDragonTrophyTile.MapEntry: Ancient Dragon Trophy
+	AncientBannerTile.MapEntry: Ancient Banner
+	AltarofEnchantmentsTile.MapEntry: Altarof Enchantments
+	AlchemyStationTile.MapEntry: Alchemy Station
+	AlchematorTile.MapEntry: Alchemator
+	AlchemasterTrophyTile.MapEntry: Alchemaster Trophy
 
 	RuinChest: {
 		MapEntry1: Mods.TremorMod.Tiles.RuinChest.MapEntry1
-		MapEntry0: Mods.TremorMod.Tiles.RuinChest.MapEntry0
+		MapEntry0: Open Ruin Chest
 	}
 
-	VeryVeryIce.MapEntry: Very Very Ice
-	GlacierWoodTile.MapEntry: Glacier Wood Tile
-	GlacierArmchairTile.MapEntry: Glacier Armchair Tile
-	IceWorkbenchTile.MapEntry: Ice Workbench Tile
-	IceTableTile.MapEntry: Ice Table Tile
-	IceSinkTile.MapEntry: Ice Sink Tile
-	IcePlatformTile.MapEntry: Ice Platform Tile
-	IcePianoTile.MapEntry: Ice Piano Tile
-	IceLanternTile.MapEntry: Ice Lantern Tile
-	IceLampTile.MapEntry: Ice Lamp Tile
-	IceGrandfatherClockTile.MapEntry: Ice Grandfather Clock Tile
-	IceDresserTile.MapEntry: Ice Dresser Tile
-	IceDoorOpen.MapEntry: Ice Door Open
-	IceDoorClosed.MapEntry: Ice Door Closed
-	IceChestTile.MapEntry: Ice Chest Tile
+	GlacierWoodTile.MapEntry: Glacier Wood
+	GlacierArmchairTile.MapEntry: Glacier Armchair
+	IceWorkbenchTile.MapEntry: Ice Workbench
+	IceTableTile.MapEntry: Ice Table
+	IceSinkTile.MapEntry: Ice Sink
+	IcePlatformTile.MapEntry: Ice Platform
+	IcePianoTile.MapEntry: Ice Piano
+	IceLanternTile.MapEntry: Ice Lantern
+	IceLampTile.MapEntry: Ice Lamp
+	IceGrandfatherClockTile.MapEntry: Ice Grandfather Clock
+	IceDresserTile.MapEntry: Ice Dresser
+	IceDoorOpen.MapEntry: Ice Door
+	IceDoorClosed.MapEntry: Ice Door
+	IceChestTile.MapEntry: Ice Chest
 
 	IceChest: {
-		MapEntry1: Mods.TremorMod.Tiles.IceChest.MapEntry1
-		MapEntry0: Mods.TremorMod.Tiles.IceChest.MapEntry0
+		MapEntry0: Ice Chest
+		MapEntry1: Locked Ice Chest
 	}
 
-	IceChandelierTile.MapEntry: Ice Chandelier Tile
-	IceChairTile.MapEntry: Ice Chair Tile
-	IceCandelabraTile.MapEntry: Ice Candelabra Tile
-	IceBookcaseTile.MapEntry: Ice Bookcase Tile
-	IceBedTile.MapEntry: Ice Bed Tile
-	IceBathtubTile.MapEntry: Ice Bathtub Tile
+	IceChandelierTile.MapEntry: Ice Chandelier
+	IceChairTile.MapEntry: Ice Chair
+	IceCandelabraTile.MapEntry: Ice Candelabra
+	IceBookcaseTile.MapEntry: Ice Bookcase
+	IceBedTile.MapEntry: Ice Bed
+	IceBathtubTile.MapEntry: Ice Bathtub
 	IceOre.MapEntry: Ice Ore
-	IceBlock.MapEntry: Ice Block
 	DungeonBlock.MapEntry: Dungeon Block
-}
-
-Walls: {
-	NightmareBrickWallTile.MapEntry: Nightmare Brick
-	GloomstoneBrickWallTile.MapEntry: Gloomstone Brick
-	DoombrickWallTile.MapEntry: Doombrick
-	GlacierWoodWallWall.MapEntry: Glacier Wood
-	GlacierFenceWall.MapEntry: Glacier Fence
-	IceWall.MapEntry: Ice Wall
-	DungeonWall.MapEntry: Dungeon Wall
+	VeryVeryIce.MapEntry: Very Very Ice
+	IceBlock.MapEntry: Ice Block
 }
 
 CometSparkleText: Mods.TremorMod.CometSparkleText
 MoonMarkText: Mods.TremorMod.MoonMarkText
+
+Walls: {
+	NightmareBrickWallTile.MapEntry: Nightmare Brick Wall Tile
+	GloomstoneBrickWallTile.MapEntry: Gloomstone Brick Wall Tile
+	DoombrickWallTile.MapEntry: Doombrick Wall Tile
+	GlacierWoodWallWall.MapEntry: Glacier Wood Wall Wall
+	GlacierFenceWall.MapEntry: Glacier Fence Wall
+	IceWall.MapEntry: Ice Wall
+	DungeonWall.MapEntry: Dungeon Wall
+}

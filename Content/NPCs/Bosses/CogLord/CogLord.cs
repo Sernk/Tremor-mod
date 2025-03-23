@@ -38,7 +38,7 @@ namespace TremorMod.Content.NPCs.Bosses.CogLord
         private float _rotationSpeed = 0.3f;
         private float _rotation;
         private float _laserRotation = MathHelper.PiOver2;
-        private float _newRotation = MathHelper.PiOver2;
+        //private float _newRotation = MathHelper.PiOver2;
 
         //Int variables
         private int GetLaserDamage => 30;
@@ -47,12 +47,12 @@ namespace TremorMod.Content.NPCs.Bosses.CogLord
         private int _currentFrame;
         private int _timeToAnimation = 6;
         private int _timer;
-        private int _timer2 = 0;
+        //private int _timer2 = 0;
         private int _shootType = ModContent.ProjectileType<CogLordGunBullet>();
-        private int _laserPosition = 20;
+        //private int _laserPosition = 20;
         private int _shootRate = 10;
         private int _timeToShoot = 4;
-        private float _previousRageRotation;
+        //private float _previousRageRotation;
 
         //String variables
         private string _leftHandName = "CogLordHand";
@@ -233,7 +233,7 @@ namespace TremorMod.Content.NPCs.Bosses.CogLord
             }
             if (_timer >= 500 && _timer < 800)
             {
-                _previousRageRotation = 0f;
+                //_previousRageRotation = 0f;
                 if (Main.netMode != 1)
                 {
                     _laserRotation += 0.01f;

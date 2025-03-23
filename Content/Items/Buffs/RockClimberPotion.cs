@@ -17,8 +17,9 @@ namespace TremorMod.Content.Items.Buffs
 			Item.useTime = 15;
 			Item.useStyle = 2;
 			Item.UseSound = SoundID.Item3;
-			Item.consumable = true;
-		}
+			Item.consumable = true;;
+            Item.buffType = ModContent.BuffType<RockClimberBuff>();
+        }
 
 		public override void SetStaticDefaults()
 		{

@@ -104,30 +104,29 @@ namespace TremorMod.Content.NPCs.TownNPCs
             return false;
         }
 
-        private readonly WeightedRandom<string> _names = new[]
-		{
-			"Merdok:2",
-			"Avalon:3",
-			"Aron",
-			"Harry",
-			"Edgar",
-			"Marco"
-		}.ToWeightedCollectionWithWeight();
+        public override List<string> SetNPCNameList() => new List<string>()
+        {
+            this.GetLocalizedValue("Name.Merdok"),
+            this.GetLocalizedValue("Name.Avalon"),
+            this.GetLocalizedValue("Name.Aron"),
+            this.GetLocalizedValue("Name.Harry"),
+            this.GetLocalizedValue("Name.Edgar"),
+            this.GetLocalizedValue("Name.Marco")
+        };
 
-        public override List<string> SetNPCNameList() => new List<string> { _names.Get() };
+        public override string GetChat()
+        {
+            WeightedRandom<string> dialogue = new WeightedRandom<string>();
 
-        private readonly WeightedRandom<string> _chats = new[]
-		{
-			"You'll never find me trapped underground.",
-			"Sorcery is all about control. It's different from magic in that it requires symbols and fetishes.",
-			"I can share the magic with you for free. Well... Almost free.",
-			"Sorry. I don't do parties.",
-			"Don't touch that if you want to keep your hand. It's still quite unstable.",
-			"I want to get the rabbit out of the hat! Do you want it? You don't want a rabbit? Seriously!?"
-		}.ToWeightedCollection();
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal1"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal2"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal3"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal4"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal5"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal6"));
 
-		public override string GetChat()
-			=> _chats.Get();
+            return dialogue;
+        }
 
 		public override void SetChatButtons(ref string button, ref string button2)
 		{

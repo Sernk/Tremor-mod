@@ -9,7 +9,6 @@ namespace TremorMod.Utilities
 {
 	public class TremorProjectiles : GlobalProjectile
 	{
-
 		public override void SetDefaults(Projectile projectile)
 		{
 			if (Main.gameMenu) return;

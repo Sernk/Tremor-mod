@@ -11,7 +11,7 @@ namespace TremorMod.Content.Items.Placeable
 		{
 			Item.width = 16;
 			Item.height = 16;
-			Item.maxStack = 999;
+			Item.maxStack = 9999;
 			Item.value = 100;
 			Item.rare = 1;
 			Item.createTile = ModContent.TileType<LadderTile>();

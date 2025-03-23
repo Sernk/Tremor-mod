@@ -9,7 +9,7 @@ namespace TremorMod.Content.Items.Materials
 		{
 			Item.width = 14;
 			Item.height = 22;
-			Item.maxStack = 99;
+			Item.maxStack = 9999;
 			Item.rare = 8;
 			Item.value = Item.buyPrice(0, 5, 0, 0);
 

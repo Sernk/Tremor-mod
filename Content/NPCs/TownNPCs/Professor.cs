@@ -101,32 +101,31 @@ namespace TremorMod.Content.NPCs.TownNPCs
             return false;
         }
 
-        private readonly WeightedRandom<string> _names = new[]
-		{
-			"James:2",
-			"Harold:2",
-			"Steven",
-			"David",
-			"John",
-			"Brus Bunner",
-			"Alfred"
-		}.ToWeightedCollectionWithWeight();
+        public override List<string> SetNPCNameList() => new List<string>()
+        {
+            this.GetLocalizedValue("Name.James"),
+            this.GetLocalizedValue("Name.Harold"),
+            this.GetLocalizedValue("Name.Steven"),
+            this.GetLocalizedValue("Name.David"),
+            this.GetLocalizedValue("Name.John"),
+            this.GetLocalizedValue("Name.BrusBunner"),
+            this.GetLocalizedValue("Name.Alfred")
+        };
 
-        public override List<string> SetNPCNameList() => new List<string> { _names.Get() };
+        public override string GetChat()
+        {
+            WeightedRandom<string> dialogue = new WeightedRandom<string>();
 
-        private readonly WeightedRandom<string> _chats = new[]
-		{
-			"Don't mind my appearance. This is just the result of a failed experiment.",
-			"Do you have a carrot? Oh, never mind.",
-			"Imagine that in all those rabbits that you have killed were imprisoned soul of common people! Just think about it...",
-			"Someday we'll all feel the cold embrace of death. Bring me some more carrot soup before this happens.",
-			"Magic allows you to do what cannot be done scientifically. The main thing is not to overdo it, if you know what I mean.",
-			"I  don't like people that like how wizards 'magically' grab rabbits out of their magic hats. It's horrible!",
-			"I studied the anomalies in this world a long time ago. During this time, I became the anomaly myself. Funny."
-		}.ToWeightedCollection();
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal1"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal2"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal3"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal4"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal5"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal6"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal7"));
 
-		public override string GetChat()
-			=> _chats.Get();
+            return dialogue;
+        }
 
 		public override void SetChatButtons(ref string button, ref string button2)
 		{

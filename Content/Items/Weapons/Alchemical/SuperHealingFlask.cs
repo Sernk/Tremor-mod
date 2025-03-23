@@ -15,7 +15,6 @@ namespace TremorMod.Content.Items.Weapons.Alchemical
             Item.DamageType = TremorMod.alchemicalDamage ?? DamageClass.Generic;
             Item.crit = 4;
 			Item.damage = 96;
-			Item.DamageType = DamageClass.Throwing;
 			Item.width = 26;
 			Item.noUseGraphic = true;
 			Item.maxStack = 999;

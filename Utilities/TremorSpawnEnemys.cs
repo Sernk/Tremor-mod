@@ -38,6 +38,8 @@ namespace TremorMod.Utilities
         public static bool spawnedOreAlready = false;
         public static bool spawnedCollapsium = false;
         public static bool spawnedAngelite = false;
+        public static int TrinityKillCount = 0;
+
 
         public override void OnWorldLoad()
         {
@@ -64,7 +66,7 @@ namespace TremorMod.Utilities
             spawnedOreAlready = false;
             spawnedCollapsium = false;
             spawnedAngelite = false;
-
+            TrinityKillCount = 0; 
         }
 
         public override void SaveWorldData(TagCompound tag)
@@ -92,6 +94,7 @@ namespace TremorMod.Utilities
             tag["spawnedOreAlready"] = spawnedOreAlready;
             tag["spawnedCollapsium"] = spawnedCollapsium;
             tag["spawnedAngelite"] = spawnedAngelite;
+            tag["TrinityKillCount"] = TrinityKillCount;
         }
 
         public override void LoadWorldData(TagCompound tag)
@@ -119,6 +122,8 @@ namespace TremorMod.Utilities
             spawnedOreAlready = tag.GetBool("spawnedOreAlready");
             spawnedCollapsium = tag.GetBool("spawnedCollapsium");
             spawnedAngelite = tag.GetBool("spawnedAngelite");
+            TrinityKillCount = tag.GetInt("TrinityKillCount");
+
         }
     }
 }

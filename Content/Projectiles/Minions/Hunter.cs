@@ -6,6 +6,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.DataStructures;
+using TremorMod.Content.Buffs;
 
 namespace TremorMod.Content.Projectiles.Minions
 {
@@ -28,8 +29,18 @@ namespace TremorMod.Content.Projectiles.Minions
             Projectile.tileCollide = false;
             ProjectileID.Sets.MinionTargettingFeature[Projectile.type] = true;
 		}
- 
-		public override bool OnTileCollide(Vector2 oldVelocity)
+
+        public override void AI()
+        {
+            Player player = Main.player[Projectile.owner];
+            if (!player.active || player.dead || !player.HasBuff(ModContent.BuffType<HunterBuff>()))
+            {
+                Projectile.Kill();
+                return;
+            }
+        }
+
+        public override bool OnTileCollide(Vector2 oldVelocity)
 		{
 			if (Projectile.velocity.X != oldVelocity.X)
 			{

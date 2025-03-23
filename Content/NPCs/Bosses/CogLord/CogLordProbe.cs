@@ -19,7 +19,7 @@ namespace TremorMod.Content.NPCs.Bosses.CogLord
 		public override void SetDefaults()
 		{
             NPC.lifeMax = 4500;
-            NPC.damage = 250;
+            NPC.damage = 1;
             NPC.defense = 10;
             NPC.knockBackResist = 0f;
             NPC.width = 42;
@@ -56,7 +56,7 @@ namespace TremorMod.Content.NPCs.Bosses.CogLord
                 _timeToShoot = _shootRate;
                 NPC parent = Main.npc[NPC.FindFirstNPC(ModContent.NPCType<CogLord>())];
                 Vector2 velocity = Helper.VelocityToPoint(NPC.Center, parent.Center, 20);
-                int k = Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, velocity, ModContent.ProjectileType<CogLordLaser>(), 100, 1f);
+                int k = Projectile.NewProjectile(NPC.GetSource_FromAI(), NPC.Center, velocity, ModContent.ProjectileType<CogLordLaser>(), 45, 1f);
                 Main.projectile[k].friendly = false;
                 Main.projectile[k].tileCollide = false;
                 Main.projectile[k].hostile = true;
@@ -65,7 +65,6 @@ namespace TremorMod.Content.NPCs.Bosses.CogLord
 
         public override bool PreDraw(SpriteBatch spriteBatch, Vector2 screenPos, Color drawColor)
         {
-            // Получаем текстуру NPC
             Texture2D drawTexture = ModContent.Request<Texture2D>(Texture).Value;
 
             Vector2 origin = new Vector2(

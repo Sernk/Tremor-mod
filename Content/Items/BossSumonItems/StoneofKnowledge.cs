@@ -17,8 +17,7 @@ namespace TremorMod.Content.Items.BossSumonItems
 			Item.width = 30;
 			Item.height = 30;
 			Item.maxStack = 1;
-			Item.rare = 12;
-			Item.maxStack = 20;
+			Item.rare = 10;
 			Item.useAnimation = 45;
 			Item.useTime = 45;
 			Item.useStyle = 4;
@@ -37,7 +36,7 @@ namespace TremorMod.Content.Items.BossSumonItems
 		{
 			return !Main.dayTime && Main.hardMode && NPC.downedMechBossAny && !NPC.AnyNPCs(ModContent.NPCType<SoulofHope>()) && !NPC.AnyNPCs(ModContent.NPCType<SoulofTrust>()) && !NPC.AnyNPCs(ModContent.NPCType<SoulofTruth>());
 		}
-		public override bool? UseItem(Player player)/* tModPorter Suggestion: Return null instead of false */
+		public override bool? UseItem(Player player)
 		{
 			Main.NewText("The Trinity has awoken!", 175, 75, 255);
 			SoundEngine.PlaySound(SoundID.Roar, player.position);

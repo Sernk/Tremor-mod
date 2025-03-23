@@ -5,6 +5,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using TremorMod.Utilities;
 using TremorMod;
+using TremorMod.Content.Buffs;
 
 namespace TremorMod.Content.Projectiles
 {
@@ -86,6 +87,12 @@ namespace TremorMod.Content.Projectiles
 		{
 			Shoot();
 			base.AI();
-		}
+            Player player = Main.player[Projectile.owner];
+            if (!player.active || player.dead || !player.HasBuff(ModContent.BuffType<CyberBuff>()))
+            {
+                Projectile.Kill();
+                return;
+            }
+        }
 	}
 }

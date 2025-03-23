@@ -7,6 +7,7 @@ using Terraria.ModLoader;
 using Terraria.DataStructures;
 using Terraria.GameContent.ItemDropRules;
 using TremorMod.Content.Biomes.Ice.Items;
+using TremorMod.Utilities;
 
 namespace TremorMod.Content.Biomes.Ice.Mobs
 {
@@ -40,44 +41,24 @@ namespace TremorMod.Content.Biomes.Ice.Mobs
 
         public override float SpawnChance(NPCSpawnInfo spawnInfo)
         {
-            // Проверка, находится ли координата в пределах карты
-            if (spawnInfo.SpawnTileX < 0 || spawnInfo.SpawnTileX >= Main.maxTilesX ||
-                spawnInfo.SpawnTileY < 0 || spawnInfo.SpawnTileY >= Main.maxTilesY)
+            if (!spawnInfo.Player.InModBiome<IceBiome>())
             {
-                return 0f;
+                if (!NPC.AnyNPCs(NPCID.LunarTowerVortex) && !NPC.AnyNPCs(NPCID.LunarTowerStardust) && !NPC.AnyNPCs(NPCID.LunarTowerNebula) && !NPC.AnyNPCs(NPCID.LunarTowerSolar))
+                {
+                    return 0f;
+                }
             }
 
-            // Список допустимых тайлов
-            int[] allowedTiles = {
-				Mod.Find<ModTile>("IceOre").Type,
-				Mod.Find<ModTile>("IceBlock").Type,
-				Mod.Find<ModTile>("VeryVeryIce").Type,
-				Mod.Find<ModTile>("DungeonBlock").Type
-			};
-
-            // Проверяем наличие тайла и дополнительные условия
-            if (allowedTiles.Contains(Main.tile[spawnInfo.SpawnTileX, spawnInfo.SpawnTileY].TileType) &&
-                !NPC.AnyNPCs(NPCID.LunarTowerVortex) &&
-                !NPC.AnyNPCs(NPCID.LunarTowerStardust) &&
-                !NPC.AnyNPCs(NPCID.LunarTowerNebula) &&
-                !NPC.AnyNPCs(NPCID.LunarTowerSolar))
-            {
-                return 15f;
-            }
-
-            return 0f;
+            return 15f;
         }
 
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
-            // Шанс выпадения Frostex (3.33%, 1 из 30)
             npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<FrostByteEye>(), 28));
 
-            // 10% шанс выпадения IceBlockB
             npcLoot.Add(ItemDropRule.ByCondition(new Conditions.NotExpert(),
                 ModContent.ItemType<IceBlockB>(), 10, 1, 4));
 
-            // 5% шанс выпадения Icicle
             npcLoot.Add(ItemDropRule.ByCondition(new Conditions.NotExpert(),
                 ModContent.ItemType<Icicle>(), 20, 1, 3));
 		}

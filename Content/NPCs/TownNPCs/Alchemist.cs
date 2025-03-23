@@ -101,20 +101,31 @@ namespace TremorMod.Content.NPCs.TownNPCs
             return false;
         }
 
-
-
-        public override List<string> SetNPCNameList() => new List<string>
+        public override List<string> SetNPCNameList() => new List<string>()
         {
-            "Rizo",
-            "Albert",
-            "Bernando",
-            "Seefeld",
-            "Raymond",
-            "Paracelsus",
-            "Nerxius"
+            this.GetLocalizedValue("Name.Rizo"),
+            this.GetLocalizedValue("Name.Albert"),
+            this.GetLocalizedValue("Name.Bernando"),
+            this.GetLocalizedValue("Name.Seefeld"),
+            this.GetLocalizedValue("Name.Raymond"),
+            this.GetLocalizedValue("Name.Paracelsus"),
+            this.GetLocalizedValue("Name.Nerxius")
         };
 
-        public override string GetChat() => "Love is just a chain of chemical reactions.";
+        public override string GetChat()
+        {
+            WeightedRandom<string> dialogue = new WeightedRandom<string>();
+
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal1"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal2"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal3"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal4"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal5"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal6"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal7"));
+
+            return dialogue;
+        }
 
         public override void SetChatButtons(ref string button, ref string button2)
         {

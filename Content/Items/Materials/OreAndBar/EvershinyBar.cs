@@ -11,7 +11,7 @@ namespace TremorMod.Content.Items.Materials.OreAndBar
 		{
 			Item.width = 30;
 			Item.height = 24;
-			Item.maxStack = 999;
+			Item.maxStack = 9999;
 			Item.value = 10000;
 			Item.rare = 8;
 			Item.createTile = ModContent.TileType<EvershinyBarTile>();

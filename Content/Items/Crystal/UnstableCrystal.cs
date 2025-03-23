@@ -19,7 +19,7 @@ namespace TremorMod.Content.Items.Crystal
             Item.value = 10000;
             Item.rare = ItemRarityID.Blue;
             Item.consumable = true;
-            Item.maxStack = 999;
+            Item.maxStack = 9999;
             Item.UseSound = SoundID.Item6;
         }
 

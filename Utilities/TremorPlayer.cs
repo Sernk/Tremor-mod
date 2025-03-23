@@ -64,6 +64,7 @@ namespace TremorMod
 		public bool ZoneGranite;
 		public bool ZoneComet;
 		public bool whiteSakura;
+		public bool CyberStray;
 		public bool petZootaloo;
 		public bool onHitShadaggers = false;
 		public bool LivingTombstone;
@@ -323,7 +324,8 @@ namespace TremorMod
 			gurdPet = false;
 			ancientVision = false;
 			whiteSakura = false;
-			petZootaloo = false;
+            CyberStray = false;
+            petZootaloo = false;
 			LivingTombstone = false;
 			miniCyber = false;
 			cluster = false;

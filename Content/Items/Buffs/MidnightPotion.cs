@@ -21,7 +21,8 @@ namespace TremorMod.Content.Items.Buffs
 			Item.useStyle = 2;
 			Item.UseSound = SoundID.Item3;
 			Item.consumable = true;
-		}
+            Item.buffType = ModContent.BuffType<NightHunting>();
+        }
 
 		public override void SetStaticDefaults()
 		{

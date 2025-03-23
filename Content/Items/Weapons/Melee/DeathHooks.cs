@@ -14,7 +14,6 @@ namespace TremorMod.Content.Items.Weapons.Melee
 			Item.DamageType = DamageClass.Melee;
 			Item.height = 84;
 			Item.noUseGraphic = true;
-			Item.maxStack = 999;
 			Item.useTime = 16;
 			Item.shoot = ModContent.ProjectileType<DeathHooksPro>();
 			Item.shootSpeed = 20f;

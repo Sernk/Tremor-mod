@@ -105,33 +105,31 @@ namespace TremorMod.Content.NPCs.TownNPCs
             return false;
         }
 
+        public override List<string> SetNPCNameList() => new List<string>()
+        {
+            this.GetLocalizedValue("Name.Badruddin"),
+            this.GetLocalizedValue("Name.Galib"),
+            this.GetLocalizedValue("Name.Salavat"),
+            this.GetLocalizedValue("Name.Zafar"),
+            this.GetLocalizedValue("Name.Valid"),
+            this.GetLocalizedValue("Name.Tunak"),
+            this.GetLocalizedValue("Name.Nadim")
+        };
 
-        private readonly WeightedRandom<string> _names = new[]
-		{
-			"Badruddin:2",
-			"Galib",
-			"Salavat",
-			"Zafar",
-			"Valid",
-			"Tunak",
-			"Nadim:3"
-		}.ToWeightedCollectionWithWeight();
+        public override string GetChat()
+        {
+            WeightedRandom<string> dialogue = new WeightedRandom<string>();
 
-        public override List<string> SetNPCNameList() => new List<string> { _names.Get() };
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal1"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal2"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal3"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal4"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal5"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal6"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal7"));
 
-        private readonly WeightedRandom<string> _chats = new[]
-		{
-			new WeightedObject<string>("Salam aleykum! Do you need anything?"),
-			new WeightedObject<string>("I got some sand in my pockets. I think throwing it will hurt your eyes.", 2),
-			new WeightedObject<string>("My wear was absolutely white long time ago. Maybe I should wash it with this perfect yellow water?", 2),
-			new WeightedObject<string>("There are stories about what happened in the sands of this desert. But I won't tell you anything.", .5),
-			new WeightedObject<string>("In case something will happen with me... I bequeath you all my sand.", .75),
-			new WeightedObject<string>("The sands are telling me that... That... Ugh... That you will buy everything!", 3),
-			new WeightedObject<string>("The sands are moving... Be careful or you will be sucked into unknown depths!")
-		}.ToWeightedCollection();
-
-		public override string GetChat()
-			=> _chats.Get();
+            return dialogue;
+        }       
 
 		public override void SetChatButtons(ref string button, ref string button2)
 		{

@@ -17,7 +17,7 @@ namespace TremorMod.Content.Biomes.Ice.Items
 			//item.thrown = true;
 			Item.width = 26;
 			Item.noUseGraphic = true;
-			Item.maxStack = 999;
+			Item.maxStack = 9999;
 			Item.consumable = true;
 			Item.height = 30;
 			Item.useTime = 20;

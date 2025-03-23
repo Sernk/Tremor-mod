@@ -22,6 +22,7 @@ using TremorMod.Content.Biomes.Ice.Dungeon;
 using TremorMod.Content.Biomes.Ice.Items;
 using TremorMod.Content.Biomes.Ice.Items.Furniture;
 using TremorMod.Utilities;
+using TremorMod.Content.Event;
 
 namespace TremorMod
 {
@@ -41,6 +42,10 @@ namespace TremorMod
 
         public override void Load()
         {
+            if (!Main.dedServ)
+            {
+                ModContent.GetInstance<CyberWrathUISystem>().Load();
+            }
             ModContent.TileType<LunarRootTile>();
             ModContent.TileType<CometiteOreTile>();
             ModContent.TileType<HardCometiteOreTile>();

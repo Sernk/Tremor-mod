@@ -12,7 +12,7 @@ namespace TremorMod.Content.Items.HeaterOfWorldsItems
 
 			Item.width = 40;
 			Item.height = 28;
-			Item.maxStack = 99;
+			Item.maxStack = 9999;
 			Item.value = 1000;
 			Item.rare = 3;
 		}

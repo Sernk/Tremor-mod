@@ -32,7 +32,6 @@ namespace TremorMod.Content.Projectiles
 
         public override void AI()
         {
-
             Player player = Main.player[Projectile.owner];
             Projectile.soundDelay--;
 
@@ -53,23 +52,16 @@ namespace TremorMod.Content.Projectiles
                     Projectile.ai[0] -= 1f;
                     if (Projectile.ai[0] <= 0f)
                     {
-                        NPC target = FindClosestEnemy(Projectile.Center, 800f);
-
                         Vector2 spawnPosition = Projectile.Center + new Vector2(Main.rand.Next(-7, 8), Main.rand.Next(-7, 8));
                         Vector2 velocity = Vector2.Zero;
                         float projectileSpeed = 14f;
-                        int num6 = 274; 
+                        int num6 = 274;
 
-                        if (target != null)
-                        {
-                            velocity = target.Center - spawnPosition;
-                            velocity.Normalize();
-                            velocity *= projectileSpeed;
-                        }
-                        else
-                        {
-                            velocity = Vector2.Normalize(Projectile.velocity) * projectileSpeed;
-                        }
+                        Vector2 mousePosition = Main.MouseWorld;
+
+                        velocity = mousePosition - spawnPosition;
+                        velocity.Normalize();
+                        velocity *= projectileSpeed;
 
                         int proj = Projectile.NewProjectile(
                             Projectile.GetSource_FromThis(),
@@ -79,12 +71,12 @@ namespace TremorMod.Content.Projectiles
                             Projectile.damage,
                             Projectile.knockBack,
                             Projectile.owner,
-                            0f, 120f 
+                            0f, 120f
                         );
 
-                        Main.projectile[proj].ai[1] = 120f; 
-                        Main.projectile[proj].extraUpdates = 1; 
-                        Main.projectile[proj].alpha = 0; 
+                        Main.projectile[proj].ai[1] = 120f;
+                        Main.projectile[proj].extraUpdates = 1;
+                        Main.projectile[proj].alpha = 0;
 
                         Projectile.ai[0] = 50f;
                     }
@@ -106,27 +98,6 @@ namespace TremorMod.Content.Projectiles
             player.itemTime = 2;
             player.itemAnimation = 2;
             player.itemRotation = Projectile.rotation;
-        }
-
-        private NPC FindClosestEnemy(Vector2 position, float maxDistance)
-        {
-            NPC closestTarget = null;
-            float minDist = maxDistance;
-
-            for (int i = 0; i < Main.maxNPCs; i++)
-            {
-                NPC npc = Main.npc[i];
-                if (npc.active && !npc.friendly && npc.lifeMax > 5)
-                {
-                    float distance = Vector2.Distance(npc.Center, position);
-                    if (distance < minDist)
-                    {
-                        closestTarget = npc;
-                        minDist = distance;
-                    }
-                }
-            }
-            return closestTarget;
         }
     }
 }

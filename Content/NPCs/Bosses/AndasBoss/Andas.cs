@@ -100,20 +100,16 @@ namespace TremorMod.Content.NPCs.Bosses.AndasBoss
 			{
 				if ((int)(Main.time % 90) == 0)
 				{
-					// Вычисляем скорость от NPC до игрока
 					Vector2 velocity = CalculateVelocity(NPC.Center, new Vector2(player.Center.X, player.Center.Y + 20), 10);
 
-					// Добавляем случайный разброс
 					int spread = 65;
 					float spreadMult = 0.05f;
 					velocity.X += Main.rand.Next(-spread, spread + 1) * spreadMult;
 					velocity.Y += Main.rand.Next(-spread, spread + 1) * spreadMult;
 
-					// Создаем снаряд
 					IEntitySource entitySource = NPC.GetSource_FromAI();
 					int projectileIndex = Projectile.NewProjectile(entitySource, NPC.Center, velocity, 258, ShootDamage, ShootKnockback, Main.myPlayer);
 
-					// Настройка снаряда
 					if (projectileIndex >= 0 && projectileIndex < Main.maxProjectiles)
 					{
 						Projectile projectile = Main.projectile[projectileIndex];
@@ -249,10 +245,8 @@ namespace TremorMod.Content.NPCs.Bosses.AndasBoss
 
 		void DoAndasShoot()
 		{
-			// Получаем источник (для использования в новом API)
 			IEntitySource entitySource = NPC.GetSource_FromAI();
 
-			// Создаем проектиль, указывая корректные типы для аргументов:
 			Projectile.NewProjectile(entitySource, NPC.position + new Vector2(40, 40), new Vector2(-ShootDirection, 0), ShootType, ShootDamage, ShootKnockback, Main.myPlayer);
 			Projectile.NewProjectile(entitySource, NPC.position + new Vector2(40, 40), new Vector2(ShootDirection, 0), ShootType, ShootDamage, ShootKnockback, Main.myPlayer);
 			Projectile.NewProjectile(entitySource, NPC.position + new Vector2(40, 40), new Vector2(0, ShootDirection), ShootType, ShootDamage, ShootKnockback, Main.myPlayer);

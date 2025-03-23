@@ -103,32 +103,32 @@ namespace TremorMod.Content.NPCs.TownNPCs
             return false;
         }
 
-        private readonly WeightedRandom<string> _names = new[]
-		{
-			"Ripley:2",
-			"Dallas",
-			"Brett",
-			"Kane:2",
-			"Ash",
-			"Parker",
-			"Lambert"
-		}.ToWeightedCollectionWithWeight();
 
-        public override List<string> SetNPCNameList() => new List<string> { _names.Get() };
+        public override List<string> SetNPCNameList() => new List<string>()
+        {
+            this.GetLocalizedValue("Name.Ripley"),
+            this.GetLocalizedValue("Name.Dallas"),
+            this.GetLocalizedValue("Name.Brett"),
+            this.GetLocalizedValue("Name.Kane"),
+            this.GetLocalizedValue("Name.Ash"),
+            this.GetLocalizedValue("Name.Parker"),
+            this.GetLocalizedValue("Name.Lambert")
+        };
 
-        private readonly WeightedRandom<string> _chats = new[]
-		{
-			"There is an explanation for anything, you know.",
-			"If you get into a trouble remember that somebody will surely save your skin.",
-			"My friend always liked to tell me the odds but now he is dead. You should know: Never tell me the odds.",
-			"That giant flying fish that you've defeated was making plans to destroy my home-planet. Glad you've killed him.",
-			"I suggest you carrying at least small blaster - nobody knows what's on mind of this creatures in this world.",
-			"Have you ever heard a tale of a giant three eyed creature with eyes in it hands and tentacles on head? I'm very glad that it is just a stupid story.",
-			"There were some cult of men calling themselve knights and fighting with some kind of light swords on a planet I was travelling once to. As for me, a gun is better than a useless sword."
-		}.ToWeightedCollection();
+        public override string GetChat()
+        {
+            WeightedRandom<string> dialogue = new WeightedRandom<string>();
 
-		public override string GetChat()
-			=> _chats.Get();
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal1"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal2"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal3"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal4"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal5"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal6"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal7"));
+
+            return dialogue;
+        }
 
 		public override void SetChatButtons(ref string button, ref string button2)
 		{

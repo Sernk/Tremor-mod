@@ -101,32 +101,31 @@ namespace TremorMod.Content.NPCs.TownNPCs
             return false;
         }
 
-        private readonly WeightedRandom<string> _names = new[]
-		{
-			"Atria",
-			"Mintaka",
-			"Nashira:2",
-			"Rana",
-			"Talita",
-			"Zosma",
-			"Pleyona:2"
-		}.ToWeightedCollectionWithWeight();
+        public override List<string> SetNPCNameList() => new List<string>()
+        {
+            this.GetLocalizedValue("Name.Atria"),
+            this.GetLocalizedValue("Name.Mintaka"),
+            this.GetLocalizedValue("Name.Nashira"),
+            this.GetLocalizedValue("Name.Rana"),
+            this.GetLocalizedValue("Name.Talita"),
+            this.GetLocalizedValue("Name.Zosma"),
+            this.GetLocalizedValue("Name.Pleyona")
+        };
 
-        public override List<string> SetNPCNameList() => new List<string> { _names.Get() };
+        public override string GetChat()
+        {
+            WeightedRandom<string> dialogue = new WeightedRandom<string>();
 
-        private readonly WeightedRandom<string> _chats = new[]
-		{
-			"There are so many beautiful things in this world! What can be more beautiful than a big shining star? Maybe only an exploding big shining star!",
-			"I hope this world doesn't have crazy kings that want to kill you. You're not one of them, are you!?",
-			"I have heard about an space station called Death Star that can destroy any planet or star! Can you show me this station?",
-			"I believe I can fly! I believe I can touch the sk-... Sorry, I forgot that I'm not alone here!",
-			"What do you call a man who watches an exploding star? A STARk man!",
-			"I was in a strange castle one day. There were mechanical things saying EXTERMINATE. Were they your minions?",
-			"Planets are burning, stars are exploding, but the prices for my spacy things are not changing!"
-		}.ToWeightedCollection();
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal1"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal2"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal3"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal4"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal5"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal6"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal7"));
 
-		public override string GetChat()
-			=> _chats.Get();
+            return dialogue;
+        }
 
 		public override void SetChatButtons(ref string button, ref string button2)
 		{

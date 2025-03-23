@@ -25,6 +25,7 @@ namespace TremorMod.Content.Items.Weapons.Throwing
             Item.shoot = ModContent.ProjectileType<AdamantiteDiscPro>();
 			Item.shootSpeed = 12f;
 			Item.autoReuse = true;
+
 		}
 
 		

@@ -9,9 +9,9 @@ namespace TremorMod.Content.Projectiles
 	{
 		public override void SetDefaults()
 		{
-			Projectile.CloneDefaults(ProjectileID.LightDisc);
-			Projectile.aiStyle = 106;
+            Projectile.CloneDefaults(106);
 
+            AIType = 106;
         }
 
 		/*public override void SetStaticDefaults()

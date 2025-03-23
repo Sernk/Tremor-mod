@@ -43,7 +43,7 @@ namespace TremorMod.Content.NPCs.Bosses
         }
 
         public float timeToShoot = 2;
-        private float vel = 2.5f;
+        //private float vel = 2.5f;
         private float lifeTime;
         private bool Rage;
 

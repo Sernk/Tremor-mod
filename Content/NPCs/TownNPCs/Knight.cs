@@ -102,32 +102,30 @@ namespace TremorMod.Content.NPCs.TownNPCs
             return false;
         }
 
+        public override List<string> SetNPCNameList() => new List<string>()
+        {
+            this.GetLocalizedValue("Name.Wheatly"),
+            this.GetLocalizedValue("Name.Daniel"),
+            this.GetLocalizedValue("Name.Crox"),
+            this.GetLocalizedValue("Name.Geralt"),
+            this.GetLocalizedValue("Name.Roland"),
+            this.GetLocalizedValue("Name.Hodor")
+        };
 
-        private readonly WeightedRandom<string> _names = new[]
-		{
-			"Wheatly",
-			"Daniel:3",
-			"Crox",
-			"Geralt:2",
-			"Roland",
-			"Hodor:4"
-		}.ToWeightedCollectionWithWeight();
+        public override string GetChat()
+        {
+            WeightedRandom<string> dialogue = new WeightedRandom<string>();
 
-        public override List<string> SetNPCNameList() => new List<string> { _names.Get() };
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal1"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal2"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal3"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal4"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal5"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal6"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal7"));
 
-        private readonly WeightedRandom<string> _chats = new[]
-		{
-			"Well met, brave adventurer.",
-			"A balanced weapon can mean the difference between victory and defeat.",
-			"I am not overly fond of the bovine hordes. Best to leave them alone, really.",
-			"Do you have a weapon? Needs about 20% more coolness!",
-			"Hail and good morrow my Liege!",
-			"I was in a strange castle one day. There were mechanical things saying EXTERMINATE. Were they your minions?",
-			"Have you ever met a knight whose name is Sir Uncle Slime? He is a good friend of mine."
-		}.ToWeightedCollection();
-
-		public override string GetChat()
-			=> Name == "Hodor" ? Name : _chats.Get();
+            return dialogue;
+        }
 
 		public override void SetChatButtons(ref string button, ref string button2)
 		{

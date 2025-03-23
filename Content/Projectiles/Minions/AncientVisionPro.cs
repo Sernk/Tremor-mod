@@ -8,6 +8,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.DataStructures;
 using TremorMod.Utilities;
+using TremorMod.Content.Buffs;
 
 namespace TremorMod.Content.Projectiles.Minions
 {
@@ -82,9 +83,15 @@ namespace TremorMod.Content.Projectiles.Minions
         {
             Shoot();
             base.AI();
+            Player player = Main.player[Projectile.owner];
+            if (!player.active || player.dead || !player.HasBuff(ModContent.BuffType<AncientVisionBuff>()))
+            {
+                Projectile.Kill();
+                return;
+            }
         }
 
-		public override bool OnTileCollide(Vector2 oldVelocity)
+        public override bool OnTileCollide(Vector2 oldVelocity)
 		{
 				if (Projectile.velocity.X != oldVelocity.X)
 				{

@@ -1,5 +1,5 @@
 displayName = Tremor Mod Updated
 author = Gs_qs
-version = 1.5
+version = 1.9.1
 modReferences = StructureHelper
 

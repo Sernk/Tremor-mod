@@ -46,26 +46,21 @@ namespace TremorMod.Content.Items.CogLordItems
             }
         }
 
-        // Переопределим метод для кастомизации стрельбы
         public override bool Shoot(Player player, Terraria.DataStructures.EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
-            // Смещение позиции при стрельбе
             Vector2 muzzleOffset = Vector2.Normalize(velocity) * 25f;
             position += muzzleOffset;
 
-            // 25% шанс на создание лазерного снаряда
-            if (Main.rand.NextBool(4)) // 25% вероятность
+            if (Main.rand.NextBool(4)) 
             {
-                // Создаем лазерный снаряд
-                Projectile.NewProjectile(source, position, velocity, ProjectileID.PurificationPowder, damage, knockback, player.whoAmI);
+                Projectile.NewProjectile(source, position, velocity, ProjectileID.HeatRay, damage, knockback, player.whoAmI);
             }
             else
             {
-                // Создаем стандартный снаряд
                 Projectile.NewProjectile(source, position, velocity, ProjectileID.WoodenArrowFriendly, damage, knockback, player.whoAmI);
             }
 
-            return false; // Отключаем стандартный выстрел
+            return false; 
         }
     }
 }

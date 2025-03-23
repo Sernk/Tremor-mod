@@ -14,7 +14,7 @@ namespace TremorMod.Content.Items.Armor.Specter
 	public class SpecterHood : ModItem
 	{
         public static LocalizedText SetBonusText { get; private set; }
-        const int ShootType = ProjectileID.HeatRay; 
+        //const int ShootType = ProjectileID.HeatRay; 
 		const float ShootRange = 600.0f; 
 		const float ShootKN = 1.0f; 
 		const int ShootRate = 120; 
@@ -45,7 +45,9 @@ namespace TremorMod.Content.Items.Armor.Specter
 
 		public override void UpdateEquip(Player player)
 		{
-			player.GetDamage(DamageClass.Melee) += 0.1f;
+            MPlayer modPlayer = player.GetModPlayer<MPlayer>();
+            modPlayer.HeatRayF = true; 
+            player.GetDamage(DamageClass.Melee) += 0.1f;
 			player.GetDamage(DamageClass.Summon) += 0.1f;
 		}
 

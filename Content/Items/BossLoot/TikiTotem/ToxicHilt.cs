@@ -9,7 +9,7 @@ namespace TremorMod.Content.Items.BossLoot.TikiTotem
 		{
 			Item.width = 22;
 			Item.height = 22;
-			Item.maxStack = 99;
+			Item.maxStack = 9999;
 			Item.value = 100;
 			Item.rare = 1;
 		}

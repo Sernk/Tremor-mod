@@ -11,7 +11,7 @@ namespace TremorMod.Content.Items.Fungus
 			Item.width = 14;
 			Item.height = 22;
 			Item.rare = 3;
-			Item.maxStack = 999;
+			Item.maxStack = 9999;
 			Item.value = 100;
 		}
 

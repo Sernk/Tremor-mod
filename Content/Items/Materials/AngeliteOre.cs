@@ -13,7 +13,7 @@ namespace TremorMod.Content.Items.Materials
 		{
 			Item.width = 30;
 			Item.height = 24;
-			Item.maxStack = 999;
+			Item.maxStack = 9999;
 			Item.value = 12500;
 			Item.rare = 0;
             Item.createTile = ModContent.TileType<AngeliteOreTile>();
@@ -25,10 +25,27 @@ namespace TremorMod.Content.Items.Materials
 			Item.consumable = true;
 		}
 
-		/*public override void SetStaticDefaults()
+        public override void SetStaticDefaults()
+        {
+            ItemID.Sets.ShimmerTransformToItem[Item.type] = ModContent.ItemType<CollapsiumOre>();
+        }
+
+        public override void ModifyTooltips(List<TooltipLine> tooltips)
+        {
+            foreach (var tooltip in tooltips)
+            {
+                // Меняем цвет текста для названия предмета
+                if (tooltip.Mod == "Terraria" && tooltip.Name == "ItemName")
+                {
+                    tooltip.OverrideColor = new Color(238, 194, 73); // Цвет золота
+                }
+            }
+        }
+
+        /*public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Angelite Ore");
 			Tooltip.SetDefault("");
 		}*/
-	}
+    }
 }

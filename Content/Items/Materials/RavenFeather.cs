@@ -10,7 +10,7 @@ namespace TremorMod.Content.Items.Materials
 			Item.width = 18;
 			Item.height = 18;
 			Item.rare = 4;
-			Item.maxStack = 999;
+			Item.maxStack = 9999;
 		}
 
 		public override void SetStaticDefaults()

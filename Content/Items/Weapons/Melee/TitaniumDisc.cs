@@ -11,7 +11,7 @@ namespace TremorMod.Content.Items.Weapons.Melee
 		{
 
 			Item.damage = 44;
-			Item.DamageType = DamageClass.Throwing;
+			Item.DamageType = DamageClass.Ranged;
 			Item.width = 48;
 			Item.height = 48;
 			Item.useTime = 20;

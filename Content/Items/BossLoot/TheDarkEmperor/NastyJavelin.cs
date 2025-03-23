@@ -11,7 +11,7 @@ namespace TremorMod.Content.Items.BossLoot.TheDarkEmperor
 		{
 			Item.damage = 162;
 			Item.width = 14;
-			Item.DamageType = DamageClass.Throwing;
+			Item.DamageType = DamageClass.Ranged;
 			Item.height = 84;
 			Item.noUseGraphic = true;
 			Item.consumable = true;

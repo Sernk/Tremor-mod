@@ -57,7 +57,7 @@ namespace TremorMod.Content.Event
             ZPoints = reader.ReadInt32();
         }
 
-        int num;
+        //int num;
         public override void LoadWorldData(TagCompound tag)
         {
             var downed = tag.GetList<string>("downed");

@@ -14,7 +14,6 @@ namespace TremorMod.Content.Items.Weapons.Throwing
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 26;
 			Item.noUseGraphic = true;
-			Item.maxStack = 999;
 			Item.consumable = true;
 			Item.height = 30;
 			Item.useTime = 25;

@@ -10,7 +10,7 @@ namespace TremorMod.Content.Items.Placeable
 		{
 			Item.width = 22;
 			Item.height = 26;
-			Item.maxStack = 99;
+			Item.maxStack = 9999;
 			Item.rare = 1;
 			Item.createTile = ModContent.TileType<BlueChristmasStockingTile>();
 			Item.useTurn = true;

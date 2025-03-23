@@ -100,29 +100,29 @@ namespace TremorMod.Content.NPCs.TownNPCs
             return false; 
         }
 
-        private readonly WeightedRandom<string> _names = new[]
-		{
-			"Richard",
-			"Arthur:2",
-			"Jack",
-			"William:2",
-			"Robin",
-			"Wales"
-		}.ToWeightedCollectionWithWeight();
+        public override List<string> SetNPCNameList() => new List<string>()
+        {
+            this.GetLocalizedValue("Name.Richard"),
+            this.GetLocalizedValue("Name.Arthur"),
+            this.GetLocalizedValue("Name.Jack"),
+            this.GetLocalizedValue("Name.William"),
+            this.GetLocalizedValue("Name.Robin"),
+            this.GetLocalizedValue("Name.Wales")
+        };
 
-        public override List<string> SetNPCNameList() => new List<string> { _names.Get() };
+        public override string GetChat()
+        {
+            WeightedRandom<string> dialogue = new WeightedRandom<string>();
 
-        private readonly WeightedRandom<string> _chats = new WeightedRandom<string>(
-			"You'd have to be a very good archer in order to shoot an arrow into a knee.".ToWeightedTuple(2),
-			"I'd like to get my hands on a goblintech bow. Those things can shoot multiple arrows.".ToWeightedTuple(.5),
-			"I deal in long distance death! Have a look at my wares.".ToWeightedTuple(),
-			"I will shoot you with my best arrow if you will not buy anything!".ToWeightedTuple(),
-			"Guns? Guns are for cowards!".ToWeightedTuple(),
-			"You don't need to make arrows. You need to buy them!".ToWeightedTuple()
-		);
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal1"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal2"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal3"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal4"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal5"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal6"));
 
-		public override string GetChat()
-			=> _chats.Get();
+            return dialogue;
+        }
 
 		public override void SetChatButtons(ref string button, ref string button2)
 		{

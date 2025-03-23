@@ -17,13 +17,19 @@ namespace TremorMod.Content.Buffs
 
         public override void Update(Player player, ref int buffIndex)
         {
-            player.buffTime[buffIndex] = 18000;
-
-            bool petProjectileNotSpawned = player.ownedProjectileCounts[ModContent.ProjectileType<Mini_Cyber>()] <= 0;
-
-            if (petProjectileNotSpawned && player.whoAmI == Main.myPlayer)
+            TremorPlayer modPlayer = player.GetModPlayer<TremorPlayer>();
+            if (player.ownedProjectileCounts[ModContent.ProjectileType<Mini_Cyber>()] > 0)
             {
-                Projectile.NewProjectile(player.GetSource_Buff(buffIndex), new Vector2(player.position.X + player.width / 2, player.position.Y + player.height / 2), Vector2.Zero, ModContent.ProjectileType<Mini_Cyber>(), 0, 0f, player.whoAmI);
+                modPlayer.CyberStray = true;
+            }
+            if (!modPlayer.CyberStray)
+            {
+                player.DelBuff(buffIndex);
+                buffIndex--;
+            }
+            else
+            {
+                player.buffTime[buffIndex] = 18000;
             }
         }
     }

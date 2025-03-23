@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using TremorMod.Content.Buffs;
 
 namespace TremorMod.Content.Projectiles.Minions
 {
@@ -40,6 +41,16 @@ namespace TremorMod.Content.Projectiles.Minions
 				}
       return false;
 		}
+
+        public override void AI()
+        {
+            Player player = Main.player[Projectile.owner];
+            if (!player.active || player.dead || !player.HasBuff(ModContent.BuffType<HungryBuff>()))
+            {
+                Projectile.Kill();
+                return;
+            }
+        }
 
         public override bool PreDraw(ref Color lightColor)
         {

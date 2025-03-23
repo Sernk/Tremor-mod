@@ -103,32 +103,31 @@ namespace TremorMod.Content.NPCs.TownNPCs
             return false;
         }
 
-        private readonly WeightedRandom<string> _names = new[]
-		{
-			"Tenner",
-			"Geyer",
-			"Cleve",
-			"Ferron",
-			"Gasper",
-			"Spots",
-			"Hargon:3"
-		}.ToWeightedCollectionWithWeight();
+        public override List<string> SetNPCNameList() => new List<string>()
+        {
+            this.GetLocalizedValue("Name.Tenner"),
+            this.GetLocalizedValue("Name.Geyer"),
+            this.GetLocalizedValue("Name.Cleve"),
+            this.GetLocalizedValue("Name.Ferron"),
+            this.GetLocalizedValue("Name.Gasper"),
+            this.GetLocalizedValue("Name.Spots"),
+            this.GetLocalizedValue("Name.Hargon")
+        };
 
-        public override List<string> SetNPCNameList() => new List<string> { _names.Get() };
+        public override string GetChat()
+        {
+            WeightedRandom<string> dialogue = new WeightedRandom<string>();
 
-        private readonly WeightedRandom<string> _chats = new[]
-		{
-			"Don't worry. Nobody will get out of the coffin that I have made.",
-			"Are you afraid of ghosts? I'm not. But the ghosts are afraid of me.",
-			"If you need some help then feel free to ask me. I have a lot of undead things on my side.:3",
-			"What will you prefer to do if this day will be your last day?",
-			"Our life is a challenge. To make it easier - buy my stuff.",
-			"Don't worry. I'm not a vampire even my eyes are red and my skin is of a strange color.",
-			"Do you prefer blood or tomato juice?"
-		}.ToWeightedCollectionWithWeight();
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal1"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal2"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal3"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal4"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal5"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal6"));
+            dialogue.Add(this.GetLocalizedValue("Chat.Normal7"));
 
-		public override string GetChat()
-			=> _chats.Get();
+            return dialogue;
+        }
 
 		public override void SetChatButtons(ref string button, ref string button2)
 		{

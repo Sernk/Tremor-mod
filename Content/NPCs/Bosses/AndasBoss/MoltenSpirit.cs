@@ -54,7 +54,13 @@ namespace TremorMod.Content.NPCs.Bosses.AndasBoss
 			return new Rectangle(0, NPC.frame.Height * (Number - 1), NPC.frame.Width, NPC.frame.Height);
 		}
 
-		public override bool PreAI()
+        public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float bossLifeScale, float balance)
+        {
+            NPC.lifeMax = (int)(NPC.lifeMax * 0.200f * bossLifeScale);
+            NPC.damage = (int)(NPC.damage * 0.2f);
+        }
+
+        public override bool PreAI()
 		{
 			NPC.spriteDirection = NPC.direction;
 			if (--TimeToAnimation <= 0)

@@ -10,7 +10,7 @@ namespace TremorMod.Content.Items.NPCsDrop
 		public override void SetDefaults()
 		{
 			Item.damage = 27;
-			Item.DamageType = DamageClass.Throwing;
+			Item.DamageType = DamageClass.Ranged;
 			Item.width = 26;
 			Item.noUseGraphic = true;
 			Item.maxStack = 1;
